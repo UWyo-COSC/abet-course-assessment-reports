@@ -140,7 +140,7 @@ Outcome | KPI    | Supporting and Assessing (Bold) Courses
 (g)     | (g.1)  | **3050**
 &nbsp;  | (g.2)  | **3050**
 (h)     | (h.1)  | ES 1101, **3050**
-&nbsp;  | (h.2)  | ES 1101, **3050**
+&nbsp;  | (h.2)  | ES 1101, **3050, 4955**
 &nbsp;  | (h.3)  | ES 1101, **3050**
 (i)     | (i.1)  | 1030, **2030**
 &nbsp;  | (i.2)  | **1010**
@@ -173,7 +173,7 @@ COSC 3011: Software Design              | (b.2), (c.3), (k.2), (k.3)  | (k)
 COSC 3020: Algorithms & Data Structures | (a.4), (a.5), (a.6), (b.1), (b.2), (j.1), (j.2), (j.3), (j.4), (j.5)  | (a), (b), (j)
 COSC 3050: Ethics                       | (e.1), (e.2), (e.3), (e.4), (g.1), (g.2), (h.1), (h.3)  | (e), (g), (h)
 COSC 4950: Senior Design I              | (c.1), (c.2), (k.4)         | (c), (k)
-COSC 4955: Senior Design II             | (c.3), (c.4), (c.5), (d.1), (d.2), (d.3), (d,4), (d.5), (f.1), (f.2), (f.3), (i.4), (k.1)  | (c), (d), (f), (i), (k)
+COSC 4955: Senior Design II             | (c.3), (c.4), (c.5), (d.1), (d.2), (d.3), (d,4), (d.5), (f.1), (f.2), (f.3), (h.2), (i.4), (k.1)  | (c), (d), (f), (i), (k)
 
 ## Evaluation Schedule Master Plan
 
