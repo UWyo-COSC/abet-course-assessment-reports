@@ -1,0 +1,21 @@
+[5]Do you think that there are problems that arise today similar to the problem
+with the Patriot Missle system during the first Gulf War? If not, why not, if
+yes, give a couple of examples of these problems.
+
+
+[5]Problems can occur with any software system, the more complex the system more
+likely there are problems. Given that, who should be held responsible for these
+problems? And to what extent? I mean if a stock trader buys software that
+directly causes the loss of millions of dollars, is the responsible party liable
+for all that? How about a loss of life?
+
+[5]I think there is some Luddite in all of us. But really, do you believe that
+automation has cost the workforce jobs? Why/how or why/how not?
+
+[5]When it comes to our health, most of us at least think about the treatments
+we get or ask for. We usually find a doctor (or doctors) we trust and stick with
+them. What would you do if you found out that your doctor was relying on some
+pay-per-use ``expert'' system to do most of her diagnoses? What if she has been
+using this system for the past 10 years?
+
+

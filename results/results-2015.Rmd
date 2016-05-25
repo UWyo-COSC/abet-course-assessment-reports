@@ -1,0 +1,68 @@
+# ABET Assessment Results for AY 2014-15
+
+The data for AY 2014-15 was used in the ABET Self-Study in
+preparation for the ABET visit in October of 2015. The full
+results are in the Self-Study, and they are summarized in
+the following table.
+
+Outcome  | % Excelled | % Mastered | % Partially Mastered | % Below Expectations 
+:-------:|-----------:|-----------:|---------------------:|--------------------:
+(a)      |         62 |         10 |                   12 |                  16
+(b)      |         69 |         14 |                   10 |                   7
+(c)      |         71 |          8 |                   11 |                  10 
+(d)      |         66 |         17 |                    7 |                  10 
+(e)      |         20 |         80 |                    0 |                   0 
+(f)      |         83 |          6 |                   11 |                   0 
+(g)      |         20 |         80 |                    0 |                   0 
+(h)      |         20 |         80 |                    0 |                   0 
+(i)      |         67 |         24 |                    3 |                   6 
+(j)      |         79 |         15 |                    2 |                   4 
+(k)      |         49 |         15 |                   24 |                  12 
+
+More details can be seen by considering the assessment of individual PKIs.
+
+Outcome | KPI    | % Excelled | % Mastered | % Partially Mastered | % Below Expectations 
+:------:|:------:|-----------:|-----------:|---------------------:|--------------------:
+(a)     | (a.1)  |  70 |  2 |  9 | 12
+&nbsp;  | (a.2)  |  14 | 14 | 20 | 33
+&nbsp;  | (a.3)  |  59 |  9 |  0 | 35
+&nbsp;  | (a.4)  |  84 | 11 |  5 |  0
+&nbsp;  | (a.5)  |  84 | 11 |  5 |  0
+&nbsp;  | (a.6)  |  42 | 32 | 10 | 16
+(b)     | (b.1)  |  74 | 11 | 10 |  5
+&nbsp;  | (b.2)  |  64 | 16 | 10 | 10
+(c)     | (c.1)  |  89 |  0 | 11 |  0
+&nbsp;  | (c.2)  |  81 |  8 | 11 |  0
+&nbsp;  | (c.3)  |  10 | 25 | 35 | 30
+&nbsp;  | (c.4)  |  89 |  0 |  0 | 11
+&nbsp;  | (c.5)  |  81 |  8 |  0 | 11
+(d)     | (d.1)  |  70 | 19 |  0 | 11
+&nbsp;  | (d.2)  |  72 | 17 |  0 | 11
+&nbsp;  | (d.3)  |  47 | 19 | 19 | 15
+&nbsp;  | (d.4)  |  95 |  0 |  5 |  0
+&nbsp;  | (d.5)  |  47 | 28 | 10 | 15
+(e)     | (e.1)  |  20 | 80 |  0 |  0
+&nbsp;  | (e.2)  |  20 | 80 |  0 |  0
+&nbsp;  | (e.3)  |  20 | 80 |  0 |  0
+&nbsp;  | (e.4)  |  20 | 80 |  0 |  0
+(f)     | (f.1)  |  70 | 19 | 11 |  0
+&nbsp;  | (f.2)  |  89 |  0 | 11 |  0
+&nbsp;  | (f.3)  |  89 |  0 | 11 |  0
+(g)     | (g.1)  |  20 | 80 |  0 |  0
+&nbsp;  | (g.2)  |  20 | 80 |  0 |  0
+(h)     | (h.1)  |  20 | 80 |  0 |  0
+&nbsp;  | (h.2)  |  20 | 80 |  0 |  0
+&nbsp;  | (h.3)  |  20 | 80 |  0 |  0
+(i)     | (i.1)  |  85 | 15 |  0 |  0
+&nbsp;  | (i.2)  |  35 | 29 | 11 | 25
+&nbsp;  | (i.3)  |  80 | 20 |  0 |  0
+&nbsp;  | (i.4)  |  78 | 22 |  0 |  0
+(j)     | (j.1)  |  63 | 27 |  5 |  5
+&nbsp;  | (j.2)  |  63 | 27 |  5 |  5
+&nbsp;  | (j.3)  |  84 |  5 |  0 | 10
+&nbsp;  | (j.4)  |  84 | 16 |  0 |  0
+&nbsp;  | (j.5)  | 100 |  0 |  0 |  0
+(k)     | (k.1)  |  67 |  8 | 14 | 11
+&nbsp;  | (k.2)  |  15 | 20 | 45 | 20
+&nbsp;  | (k.3)  |  25 | 30 | 25 | 20
+&nbsp;  | (k.4)  |  89 |  0 | 11 |  0

@@ -7,8 +7,6 @@ Its primary purpose is twofold:
 1. *Greater Transparency* by providing a central location where users interested in 
    ABET accredication of our department can see the ongoing process.
 2. *Improved Continuity* by allowing all department members and stakeholders to see
-   upcoming deadlines and procedures as they prepare for future visits. This will also
-   guarantee that if the ABET Coordinator is hit by the proverbial bus, the department's
-   ability to continue the assessment process will not be overly affected.
+   upcoming deadlines and procedures as they prepare for future visits.
 
 
