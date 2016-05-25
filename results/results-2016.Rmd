@@ -114,6 +114,10 @@ get.below.expectations <- function (key) {
     pct <- num.below.expectations[[key]] / (num.excelled[[key]] + num.mastered[[key]] + num.partially.mastered[[key]] + num.below.expectations[[key]])
     return (round(100*pct))
 }
+num.assessed <- function (key) {
+    num <- num.excelled[[key]] + num.mastered[[key]] + num.partially.mastered[[key]] + num.below.expectations[[key]]
+    return (num)
+}
 
 history.excelled <- data.frame(
     a=c(62, get.excelled('a')),
@@ -174,19 +178,19 @@ The data for AY 2015-16 was used in the Department's response
 to the ABET evaluation of our program following the ABET Team
 Visit on October of 2015. 
 
-Outcome  | % Excelled | % Mastered | % Partially Mastered | % Below Expectations 
-:-------:|-----------:|-----------:|---------------------:|--------------------:
-(a)      | `r get.excelled('a')` | `r get.mastered('a')` | `r get.partially.mastered('a')` | `r get.below.expectations('a')`
-(b)      | `r get.excelled('b')` | `r get.mastered('b')` | `r get.partially.mastered('b')` | `r get.below.expectations('b')`
-(c)      | `r get.excelled('c')` | `r get.mastered('c')` | `r get.partially.mastered('c')` | `r get.below.expectations('c')`
-(d)      | `r get.excelled('d')` | `r get.mastered('d')` | `r get.partially.mastered('d')` | `r get.below.expectations('d')`
-(e)      | `r get.excelled('e')` | `r get.mastered('e')` | `r get.partially.mastered('e')` | `r get.below.expectations('e')`
-(f)      | `r get.excelled('f')` | `r get.mastered('f')` | `r get.partially.mastered('f')` | `r get.below.expectations('f')`
-(g)      | `r get.excelled('g')` | `r get.mastered('g')` | `r get.partially.mastered('g')` | `r get.below.expectations('g')`
-(h)      | `r get.excelled('h')` | `r get.mastered('h')` | `r get.partially.mastered('h')` | `r get.below.expectations('h')`
-(i)      | `r get.excelled('i')` | `r get.mastered('i')` | `r get.partially.mastered('i')` | `r get.below.expectations('i')`
-(j)      | `r get.excelled('j')` | `r get.mastered('j')` | `r get.partially.mastered('j')` | `r get.below.expectations('j')`
-(k)      | `r get.excelled('k')` | `r get.mastered('k')` | `r get.partially.mastered('k')` | `r get.below.expectations('k')`
+Outcome  | % Excelled | % Mastered | % Partially Mastered | % Below Expectations | #Student Assessments
+:-------:|-----------:|-----------:|---------------------:|---------------------:|------------------------:
+(a)      | `r get.excelled('a')` | `r get.mastered('a')` | `r get.partially.mastered('a')` | `r get.below.expectations('a')` | `r num.assessed('a')`
+(b)      | `r get.excelled('b')` | `r get.mastered('b')` | `r get.partially.mastered('b')` | `r get.below.expectations('b')` | `r num.assessed('b')`
+(c)      | `r get.excelled('c')` | `r get.mastered('c')` | `r get.partially.mastered('c')` | `r get.below.expectations('c')` | `r num.assessed('c')`
+(d)      | `r get.excelled('d')` | `r get.mastered('d')` | `r get.partially.mastered('d')` | `r get.below.expectations('d')` | `r num.assessed('d')`
+(e)      | `r get.excelled('e')` | `r get.mastered('e')` | `r get.partially.mastered('e')` | `r get.below.expectations('e')` | `r num.assessed('e')`
+(f)      | `r get.excelled('f')` | `r get.mastered('f')` | `r get.partially.mastered('f')` | `r get.below.expectations('f')` | `r num.assessed('f')`
+(g)      | `r get.excelled('g')` | `r get.mastered('g')` | `r get.partially.mastered('g')` | `r get.below.expectations('g')`| `r num.assessed('g')`
+(h)      | `r get.excelled('h')` | `r get.mastered('h')` | `r get.partially.mastered('h')` | `r get.below.expectations('h')`| `r num.assessed('h')`
+(i)      | `r get.excelled('i')` | `r get.mastered('i')` | `r get.partially.mastered('i')` | `r get.below.expectations('i')`| `r num.assessed('i')`
+(j)      | `r get.excelled('j')` | `r get.mastered('j')` | `r get.partially.mastered('j')` | `r get.below.expectations('j')`| `r num.assessed('j')`
+(k)      | `r get.excelled('k')` | `r get.mastered('k')` | `r get.partially.mastered('k')` | `r get.below.expectations('k')`| `r num.assessed('k')`
 
 Considering Excelled and Mastered to "Satisfy" each student outcome, we can look at historical trends.
 
@@ -212,51 +216,51 @@ this closely in the next years.
 
 More details of student assessment can be seen by considering the assessment of individual PKIs.
 
-Outcome | KPI    | % Excelled | % Mastered | % Partially Mastered | % Below Expectations 
-:------:|:------:|-----------:|-----------:|---------------------:|--------------------:
-(a)     | (a.1)  |  `r get.excelled('a1')` | `r get.mastered('a1')` | `r get.partially.mastered('a1')` | `r get.below.expectations('a1')`
-&nbsp;  | (a.2)  |  `r get.excelled('a2')` | `r get.mastered('a2')` | `r get.partially.mastered('a2')` | `r get.below.expectations('a2')`
-&nbsp;  | (a.3)  |  `r get.excelled('a3')` | `r get.mastered('a3')` | `r get.partially.mastered('a3')` | `r get.below.expectations('a3')`
-&nbsp;  | (a.4)  |  `r get.excelled('a4')` | `r get.mastered('a4')` | `r get.partially.mastered('a4')` | `r get.below.expectations('a4')`
-&nbsp;  | (a.5)  |  * | * | * | *
-&nbsp;  | (a.6)  |  * | * | * | *
-(b)     | (b.1)  |  * | * | * | *
-&nbsp;  | (b.2)  |  `r get.excelled('b2')` | `r get.mastered('b2')` | `r get.partially.mastered('b2')` | `r get.below.expectations('b2')`
-(c)     | (c.1)  |  `r get.excelled('c1')` | `r get.mastered('c1')` | `r get.partially.mastered('c1')` | `r get.below.expectations('c1')`
-&nbsp;  | (c.2)  |  `r get.excelled('c2')` | `r get.mastered('c2')` | `r get.partially.mastered('c2')` | `r get.below.expectations('c2')`
-&nbsp;  | (c.3)  |  `r get.excelled('c3')` | `r get.mastered('c3')` | `r get.partially.mastered('c3')` | `r get.below.expectations('c3')`
-&nbsp;  | (c.4)  |  `r get.excelled('c4')` | `r get.mastered('c4')` | `r get.partially.mastered('c4')` | `r get.below.expectations('c4')`
-&nbsp;  | (c.5)  |  `r get.excelled('c5')` | `r get.mastered('c5')` | `r get.partially.mastered('c5')` | `r get.below.expectations('c5')`
-(d)     | (d.1)  |  `r get.excelled('d1')` | `r get.mastered('d1')` | `r get.partially.mastered('d1')` | `r get.below.expectations('d1')`
-&nbsp;  | (d.2)  |  `r get.excelled('d2')` | `r get.mastered('d2')` | `r get.partially.mastered('d2')` | `r get.below.expectations('d2')`
-&nbsp;  | (d.3)  |  `r get.excelled('d3')` | `r get.mastered('d3')` | `r get.partially.mastered('d3')` | `r get.below.expectations('d3')`
-&nbsp;  | (d.4)  |  `r get.excelled('d4')` | `r get.mastered('d4')` | `r get.partially.mastered('d4')` | `r get.below.expectations('d4')`
-&nbsp;  | (d.5)  |  `r get.excelled('d5')` | `r get.mastered('d5')` | `r get.partially.mastered('d5')` | `r get.below.expectations('d5')`
-(e)     | (e.1)  |  `r get.excelled('e1')` | `r get.mastered('e1')` | `r get.partially.mastered('e1')` | `r get.below.expectations('e1')`  
-&nbsp;  | (e.2)  |  `r get.excelled('e2')` | `r get.mastered('e2')` | `r get.partially.mastered('e2')` | `r get.below.expectations('e2')`  
-&nbsp;  | (e.3)  |  `r get.excelled('e3')` | `r get.mastered('e3')` | `r get.partially.mastered('e3')` | `r get.below.expectations('e3')`  
-&nbsp;  | (e.4)  |  `r get.excelled('e4')` | `r get.mastered('e4')` | `r get.partially.mastered('e4')` | `r get.below.expectations('e4')`  
-(f)     | (f.1)  |  `r get.excelled('f1')` | `r get.mastered('f1')` | `r get.partially.mastered('f1')` | `r get.below.expectations('f1')`  
-&nbsp;  | (f.2)  |  `r get.excelled('f2')` | `r get.mastered('f2')` | `r get.partially.mastered('f2')` | `r get.below.expectations('f2')`  
-&nbsp;  | (f.3)  |  `r get.excelled('f3')` | `r get.mastered('f3')` | `r get.partially.mastered('f3')` | `r get.below.expectations('f3')`  
-(g)     | (g.1)  |  `r get.excelled('g1')` | `r get.mastered('g1')` | `r get.partially.mastered('g1')` | `r get.below.expectations('g1')`  
-&nbsp;  | (g.2)  |  `r get.excelled('g2')` | `r get.mastered('g2')` | `r get.partially.mastered('g2')` | `r get.below.expectations('g2')`  
-(h)     | (h.1)  |  `r get.excelled('h1')` | `r get.mastered('h1')` | `r get.partially.mastered('h1')` | `r get.below.expectations('h1')`  
-&nbsp;  | (h.2)  |  * | * | * | *
-&nbsp;  | (h.3)  |  `r get.excelled('h3')` | `r get.mastered('h3')` | `r get.partially.mastered('h3')` | `r get.below.expectations('h3')`  
-(i)     | (i.1)  |  `r get.excelled('i1')` | `r get.mastered('i1')` | `r get.partially.mastered('i1')` | `r get.below.expectations('i1')`
-&nbsp;  | (i.2)  |  `r get.excelled('i2')` | `r get.mastered('i2')` | `r get.partially.mastered('i2')` | `r get.below.expectations('i2')`
-&nbsp;  | (i.3)  |  `r get.excelled('i3')` | `r get.mastered('i3')` | `r get.partially.mastered('i3')` | `r get.below.expectations('i3')`
-&nbsp;  | (i.4)  |  `r get.excelled('i4')` | `r get.mastered('i4')` | `r get.partially.mastered('i4')` | `r get.below.expectations('i4')`
-(j)     | (j.1)  |  * | * | * | *
-&nbsp;  | (j.2)  |  * | * | * | *
-&nbsp;  | (j.3)  |  `r get.excelled('j3')` | `r get.mastered('j3')` | `r get.partially.mastered('j3')` | `r get.below.expectations('j3')`
-&nbsp;  | (j.4)  |  `r get.excelled('j4')` | `r get.mastered('j4')` | `r get.partially.mastered('j4')` | `r get.below.expectations('j4')`
-&nbsp;  | (j.5)  |  `r get.excelled('j5')` | `r get.mastered('j5')` | `r get.partially.mastered('j5')` | `r get.below.expectations('j5')`
-(k)     | (k.1)  |  `r get.excelled('k1')` | `r get.mastered('k1')` | `r get.partially.mastered('k1')` | `r get.below.expectations('k1')`
-&nbsp;  | (k.2)  |  `r get.excelled('k2')` | `r get.mastered('k2')` | `r get.partially.mastered('k2')` | `r get.below.expectations('k2')`
-&nbsp;  | (k.3)  |  `r get.excelled('k3')` | `r get.mastered('k3')` | `r get.partially.mastered('k3')` | `r get.below.expectations('k3')`
-&nbsp;  | (k.4)  |  `r get.excelled('k4')` | `r get.mastered('k4')` | `r get.partially.mastered('k4')` | `r get.below.expectations('k4')`
+Outcome | KPI    | % Excelled | % Mastered | % Partially Mastered | % Below Expectations | #Student Assessments
+:------:|:------:|-----------:|-----------:|---------------------:|---------------------:|--------------------:
+(a)     | (a.1)  |  `r get.excelled('a1')` | `r get.mastered('a1')` | `r get.partially.mastered('a1')` | `r get.below.expectations('a1')` | `r num.assessed('a1')`
+&nbsp;  | (a.2)  |  `r get.excelled('a2')` | `r get.mastered('a2')` | `r get.partially.mastered('a2')` | `r get.below.expectations('a2')` | `r num.assessed('a2')`
+&nbsp;  | (a.3)  |  `r get.excelled('a3')` | `r get.mastered('a3')` | `r get.partially.mastered('a3')` | `r get.below.expectations('a3')` | `r num.assessed('a3')`
+&nbsp;  | (a.4)  |  `r get.excelled('a4')` | `r get.mastered('a4')` | `r get.partially.mastered('a4')` | `r get.below.expectations('a4')` | `r num.assessed('a4')`
+&nbsp;  | (a.5)  |  * | * | * | * | 0
+&nbsp;  | (a.6)  |  * | * | * | * | 0
+(b)     | (b.1)  |  * | * | * | * | 0
+&nbsp;  | (b.2)  |  `r get.excelled('b2')` | `r get.mastered('b2')` | `r get.partially.mastered('b2')` | `r get.below.expectations('b2')` | `r num.assessed('b2')`
+(c)     | (c.1)  |  `r get.excelled('c1')` | `r get.mastered('c1')` | `r get.partially.mastered('c1')` | `r get.below.expectations('c1')` | `r num.assessed('c1')`
+&nbsp;  | (c.2)  |  `r get.excelled('c2')` | `r get.mastered('c2')` | `r get.partially.mastered('c2')` | `r get.below.expectations('c2')` | `r num.assessed('c2')`
+&nbsp;  | (c.3)  |  `r get.excelled('c3')` | `r get.mastered('c3')` | `r get.partially.mastered('c3')` | `r get.below.expectations('c3')` | `r num.assessed('c3')`
+&nbsp;  | (c.4)  |  `r get.excelled('c4')` | `r get.mastered('c4')` | `r get.partially.mastered('c4')` | `r get.below.expectations('c4')` | `r num.assessed('c4')`
+&nbsp;  | (c.5)  |  `r get.excelled('c5')` | `r get.mastered('c5')` | `r get.partially.mastered('c5')` | `r get.below.expectations('c5')` | `r num.assessed('c5')`
+(d)     | (d.1)  |  `r get.excelled('d1')` | `r get.mastered('d1')` | `r get.partially.mastered('d1')` | `r get.below.expectations('d1')` | `r num.assessed('d1')`
+&nbsp;  | (d.2)  |  `r get.excelled('d2')` | `r get.mastered('d2')` | `r get.partially.mastered('d2')` | `r get.below.expectations('d2')` | `r num.assessed('d2')`
+&nbsp;  | (d.3)  |  `r get.excelled('d3')` | `r get.mastered('d3')` | `r get.partially.mastered('d3')` | `r get.below.expectations('d3')` | `r num.assessed('d3')`
+&nbsp;  | (d.4)  |  `r get.excelled('d4')` | `r get.mastered('d4')` | `r get.partially.mastered('d4')` | `r get.below.expectations('d4')` | `r num.assessed('d4')`
+&nbsp;  | (d.5)  |  `r get.excelled('d5')` | `r get.mastered('d5')` | `r get.partially.mastered('d5')` | `r get.below.expectations('d5')` | `r num.assessed('d5')`
+(e)     | (e.1)  |  `r get.excelled('e1')` | `r get.mastered('e1')` | `r get.partially.mastered('e1')` | `r get.below.expectations('e1')` | `r num.assessed('e1')`
+&nbsp;  | (e.2)  |  `r get.excelled('e2')` | `r get.mastered('e2')` | `r get.partially.mastered('e2')` | `r get.below.expectations('e2')` | `r num.assessed('e2')`
+&nbsp;  | (e.3)  |  `r get.excelled('e3')` | `r get.mastered('e3')` | `r get.partially.mastered('e3')` | `r get.below.expectations('e3')` | `r num.assessed('e3')`
+&nbsp;  | (e.4)  |  `r get.excelled('e4')` | `r get.mastered('e4')` | `r get.partially.mastered('e4')` | `r get.below.expectations('e4')` | `r num.assessed('e4')`
+(f)     | (f.1)  |  `r get.excelled('f1')` | `r get.mastered('f1')` | `r get.partially.mastered('f1')` | `r get.below.expectations('f1')` | `r num.assessed('f1')`
+&nbsp;  | (f.2)  |  `r get.excelled('f2')` | `r get.mastered('f2')` | `r get.partially.mastered('f2')` | `r get.below.expectations('f2')` | `r num.assessed('f2')`
+&nbsp;  | (f.3)  |  `r get.excelled('f3')` | `r get.mastered('f3')` | `r get.partially.mastered('f3')` | `r get.below.expectations('f3')` | `r num.assessed('f3')`
+(g)     | (g.1)  |  `r get.excelled('g1')` | `r get.mastered('g1')` | `r get.partially.mastered('g1')` | `r get.below.expectations('g1')` | `r num.assessed('g1')`
+&nbsp;  | (g.2)  |  `r get.excelled('g2')` | `r get.mastered('g2')` | `r get.partially.mastered('g2')` | `r get.below.expectations('g2')` | `r num.assessed('g2')`
+(h)     | (h.1)  |  `r get.excelled('h1')` | `r get.mastered('h1')` | `r get.partially.mastered('h1')` | `r get.below.expectations('h1')` | `r num.assessed('h1')`
+&nbsp;  | (h.2)  |  * | * | * | * | 0
+&nbsp;  | (h.3)  |  `r get.excelled('h3')` | `r get.mastered('h3')` | `r get.partially.mastered('h3')` | `r get.below.expectations('h3')` | `r num.assessed('h3')`
+(i)     | (i.1)  |  `r get.excelled('i1')` | `r get.mastered('i1')` | `r get.partially.mastered('i1')` | `r get.below.expectations('i1')` | `r num.assessed('i1')`
+&nbsp;  | (i.2)  |  `r get.excelled('i2')` | `r get.mastered('i2')` | `r get.partially.mastered('i2')` | `r get.below.expectations('i2')` | `r num.assessed('i2')`
+&nbsp;  | (i.3)  |  `r get.excelled('i3')` | `r get.mastered('i3')` | `r get.partially.mastered('i3')` | `r get.below.expectations('i3')` | `r num.assessed('i3')`
+&nbsp;  | (i.4)  |  `r get.excelled('i4')` | `r get.mastered('i4')` | `r get.partially.mastered('i4')` | `r get.below.expectations('i4')` | `r num.assessed('i4')`
+(j)     | (j.1)  |  * | * | * | * | 0
+&nbsp;  | (j.2)  |  * | * | * | * | 0
+&nbsp;  | (j.3)  |  `r get.excelled('j3')` | `r get.mastered('j3')` | `r get.partially.mastered('j3')` | `r get.below.expectations('j3')` | `r num.assessed('j3')`
+&nbsp;  | (j.4)  |  `r get.excelled('j4')` | `r get.mastered('j4')` | `r get.partially.mastered('j4')` | `r get.below.expectations('j4')` | `r num.assessed('j4')`
+&nbsp;  | (j.5)  |  `r get.excelled('j5')` | `r get.mastered('j5')` | `r get.partially.mastered('j5')` | `r get.below.expectations('j5')` | `r num.assessed('j5')`
+(k)     | (k.1)  |  `r get.excelled('k1')` | `r get.mastered('k1')` | `r get.partially.mastered('k1')` | `r get.below.expectations('k1')` | `r num.assessed('k1')`
+&nbsp;  | (k.2)  |  `r get.excelled('k2')` | `r get.mastered('k2')` | `r get.partially.mastered('k2')` | `r get.below.expectations('k2')` | `r num.assessed('k2')`
+&nbsp;  | (k.3)  |  `r get.excelled('k3')` | `r get.mastered('k3')` | `r get.partially.mastered('k3')` | `r get.below.expectations('k3')` | `r num.assessed('k3')`
+&nbsp;  | (k.4)  |  `r get.excelled('k4')` | `r get.mastered('k4')` | `r get.partially.mastered('k4')` | `r get.below.expectations('k4')` | `r num.assessed('k4')`
 
 As this table shows, some of the PKIs were not assessed in the current cycle. This is due to two reasons:
 

@@ -23,7 +23,8 @@ have **satisfied** the corresponding KPI for the purpose of assessment. We asses
 each KPI by keeping a historical record of the proportion of students who satisfy
 the KPI at each assessment cycle, typically no more than two years.  The assessment
 for each KPI is then aggregate into an assessment for the associated student outcome.
-This aggregation is performed using a simple average.
+This aggregation is performed using an average that is weighted by the number of
+student assessments (or distinct observations).
 
 ## Student Outcomes
 
