@@ -1,176 +1,12 @@
 # ABET Assessment Results for AY 2015-16
 
-```{r echo=FALSE}
-num.excelled <- c(
-    a1=6+14, a2=6, a3=13, a4=22, a5=12, a6=11,
-    b1=5, b2=38,
-    c1=27, c2=24, c3=38+18, c4=21, c5=6, 
-    d1=17, d2=30, d3=26, d4=6, d5=8,
-    e1=24, e2=24, e3=24, e4=22,
-    f1=8, f2=33, f3=25,
-    g1=24, g2=24,
-    h1=24, h2=18, h3=24,
-    i1=8, i2=6, i3=19, i4=21,
-    j1=17, j2=2, j3=21, j4=2, j5=5,
-    k1=17, k2=50+42+51+50, k3=38, k4=35)
-num.mastered <- c(
-    a1=20+1, a2=4, a3=1, a4=0, a5=18, a6=20,
-    b1=11, b2=20,
-    c1=4, c2=7, c3=20+3, c4=4, c5=14,
-    d1=3, d2=0, d3=0, d4=19, d5=18,
-    e1=0, e2=0, e3=0, e4=2,
-    f1=21, f2=0, f3=8,
-    g1=0, g2=0,
-    h1=0, h2=8, h3=0,
-    i1=13, i2=0, i3=0, i4=12,
-    j1=11, j2=9, j3=0, j4=10, j5=4,
-    k1=9, k2=0+0+0+0, k3=20, k4=0)
-num.partially.mastered <- c(
-    a1=0+3, a2=2, a3=9, a4=1, a5=1, a6=0,
-    b1=9, b2=5,
-    c1=0, c2=0, c3=5+4, c4=5, c5=7,
-    d1=10, d2=0, d3=7, d4=8, d5=7,
-    e1=0, e2=0, e3=0, e4=0,
-    f1=4, f2=0, f3=0,
-    g1=0, g2=0,
-    h1=0, h2=7, h3=0,
-    i1=3, i2=0, i3=7, i4=0,
-    j1=2, j2=7, j3=5, j4=4, j5=4,
-    k1=3, k2=1+0+0+0, k3=5, k4=0)
-num.below.expectations <- c(
-    a1=1+6, a2=12, a3=1, a4=1, a5=0, a6=0,
-    b1=6, b2=0,
-    c1=4, c2=4, c3=0+8, c4=3, c5=6,
-    d1=3, d2=3, d3=0, d4=0, d5=0,
-    e1=0, e2=0, e3=0, e4=0,
-    f1=0, f2=0, f3=0,
-    g1=0, g2=0,
-    h1=0, h2=0, h3=0,
-    i1=1, i2=6, i3=0, i4=0,
-    j1=2, j2=15, j3=6, j4=2, j5=3,
-    k1=4, k2=12+21+12+13, k3=0, k4=0)
+[42]
 
-num.excelled['a'] <- sum(num.excelled[paste('a', 1:6, sep="")])
-num.excelled['b'] <- sum(num.excelled[paste('b', 1:2, sep="")])
-num.excelled['c'] <- sum(num.excelled[paste('c', 1:5, sep="")])
-num.excelled['d'] <- sum(num.excelled[paste('d', 1:5, sep="")])
-num.excelled['e'] <- sum(num.excelled[paste('e', 1:4, sep="")])
-num.excelled['f'] <- sum(num.excelled[paste('f', 1:3, sep="")])
-num.excelled['g'] <- sum(num.excelled[paste('g', 1:2, sep="")])
-num.excelled['h'] <- sum(num.excelled[paste('h', 1:3, sep="")])
-num.excelled['i'] <- sum(num.excelled[paste('i', 1:4, sep="")])
-num.excelled['j'] <- sum(num.excelled[paste('j', 1:5, sep="")])
-num.excelled['k'] <- sum(num.excelled[paste('k', 1:4, sep="")])
+[3]
 
-num.mastered['a'] <- sum(num.mastered[paste('a', 1:6, sep="")])
-num.mastered['b'] <- sum(num.mastered[paste('b', 1:2, sep="")])
-num.mastered['c'] <- sum(num.mastered[paste('c', 1:5, sep="")])
-num.mastered['d'] <- sum(num.mastered[paste('d', 1:5, sep="")])
-num.mastered['e'] <- sum(num.mastered[paste('e', 1:4, sep="")])
-num.mastered['f'] <- sum(num.mastered[paste('f', 1:3, sep="")])
-num.mastered['g'] <- sum(num.mastered[paste('g', 1:2, sep="")])
-num.mastered['h'] <- sum(num.mastered[paste('h', 1:3, sep="")])
-num.mastered['i'] <- sum(num.mastered[paste('i', 1:4, sep="")])
-num.mastered['j'] <- sum(num.mastered[paste('j', 1:5, sep="")])
-num.mastered['k'] <- sum(num.mastered[paste('k', 1:4, sep="")])
 
-num.partially.mastered['a'] <- sum(num.partially.mastered[paste('a', 1:6, sep="")])
-num.partially.mastered['b'] <- sum(num.partially.mastered[paste('b', 1:2, sep="")])
-num.partially.mastered['c'] <- sum(num.partially.mastered[paste('c', 1:5, sep="")])
-num.partially.mastered['d'] <- sum(num.partially.mastered[paste('d', 1:5, sep="")])
-num.partially.mastered['e'] <- sum(num.partially.mastered[paste('e', 1:4, sep="")])
-num.partially.mastered['f'] <- sum(num.partially.mastered[paste('f', 1:3, sep="")])
-num.partially.mastered['g'] <- sum(num.partially.mastered[paste('g', 1:2, sep="")])
-num.partially.mastered['h'] <- sum(num.partially.mastered[paste('h', 1:3, sep="")])
-num.partially.mastered['i'] <- sum(num.partially.mastered[paste('i', 1:4, sep="")])
-num.partially.mastered['j'] <- sum(num.partially.mastered[paste('j', 1:5, sep="")])
-num.partially.mastered['k'] <- sum(num.partially.mastered[paste('k', 1:4, sep="")])
 
-num.below.expectations['a'] <- sum(num.below.expectations[paste('a', 1:6, sep="")])
-num.below.expectations['b'] <- sum(num.below.expectations[paste('b', 1:2, sep="")])
-num.below.expectations['c'] <- sum(num.below.expectations[paste('c', 1:5, sep="")])
-num.below.expectations['d'] <- sum(num.below.expectations[paste('d', 1:5, sep="")])
-num.below.expectations['e'] <- sum(num.below.expectations[paste('e', 1:4, sep="")])
-num.below.expectations['f'] <- sum(num.below.expectations[paste('f', 1:3, sep="")])
-num.below.expectations['g'] <- sum(num.below.expectations[paste('g', 1:2, sep="")])
-num.below.expectations['h'] <- sum(num.below.expectations[paste('h', 1:3, sep="")])
-num.below.expectations['i'] <- sum(num.below.expectations[paste('i', 1:4, sep="")])
-num.below.expectations['j'] <- sum(num.below.expectations[paste('j', 1:5, sep="")])
-num.below.expectations['k'] <- sum(num.below.expectations[paste('k', 1:4, sep="")])
 
-get.excelled <- function (key) {
-    pct <- num.excelled[[key]] / (num.excelled[[key]] + num.mastered[[key]] + num.partially.mastered[[key]] + num.below.expectations[[key]])
-    return (round(100*pct))
-}
-get.mastered <- function (key) {
-    pct <- num.mastered[[key]] / (num.excelled[[key]] + num.mastered[[key]] + num.partially.mastered[[key]] + num.below.expectations[[key]])
-    return (round(100*pct))
-}
-get.partially.mastered <- function (key) {
-    pct <- num.partially.mastered[[key]] / (num.excelled[[key]] + num.mastered[[key]] + num.partially.mastered[[key]] + num.below.expectations[[key]])
-    return (round(100*pct))
-}
-get.below.expectations <- function (key) {
-    pct <- num.below.expectations[[key]] / (num.excelled[[key]] + num.mastered[[key]] + num.partially.mastered[[key]] + num.below.expectations[[key]])
-    return (round(100*pct))
-}
-num.assessed <- function (key) {
-    num <- num.excelled[[key]] + num.mastered[[key]] + num.partially.mastered[[key]] + num.below.expectations[[key]]
-    return (num)
-}
-
-history.excelled <- data.frame(
-    a=c(62, get.excelled('a')),
-    b=c(69, get.excelled('b')),
-    c=c(71, get.excelled('c')),
-    d=c(66, get.excelled('d')),
-    e=c(20, get.excelled('e')),
-    f=c(83, get.excelled('f')),
-    g=c(20, get.excelled('g')),
-    h=c(20, get.excelled('h')),
-    i=c(67, get.excelled('i')),
-    j=c(79, get.excelled('j')),
-    k=c(49, get.excelled('k')))
-history.mastered <- data.frame(
-    a=c(10, get.mastered('a')),
-    b=c(14, get.mastered('b')),
-    c=c( 8, get.mastered('c')),
-    d=c(17, get.mastered('d')),
-    e=c(80, get.mastered('e')),
-    f=c( 6, get.mastered('f')),
-    g=c(80, get.mastered('g')),
-    h=c(80, get.mastered('h')),
-    i=c(24, get.mastered('i')),
-    j=c(15, get.mastered('j')),
-    k=c(15, get.mastered('k')))
-history.partially.mastered <- data.frame(
-    a=c(12, get.partially.mastered('a')),
-    b=c(10, get.partially.mastered('b')),
-    c=c(11, get.partially.mastered('c')),
-    d=c( 7, get.partially.mastered('d')),
-    e=c( 0, get.partially.mastered('e')),
-    f=c(11, get.partially.mastered('f')),
-    g=c( 0, get.partially.mastered('g')),
-    h=c( 0, get.partially.mastered('h')),
-    i=c( 3, get.partially.mastered('i')),
-    j=c( 2, get.partially.mastered('j')),
-    k=c(24, get.partially.mastered('k')))
-history.below.expectations <- data.frame(
-    a=c(16, get.below.expectations('a')),
-    b=c( 7, get.below.expectations('b')),
-    c=c(10, get.below.expectations('c')),
-    d=c(10, get.below.expectations('d')),
-    e=c( 0, get.below.expectations('e')),
-    f=c( 0, get.below.expectations('f')),
-    g=c( 0, get.below.expectations('g')),
-    h=c( 0, get.below.expectations('h')),
-    i=c( 6, get.below.expectations('i')),
-    j=c( 4, get.below.expectations('j')),
-    k=c(12, get.below.expectations('k')))
-
-history.pass <- history.excelled + history.mastered
-history.fail <- history.partially.mastered + history.below.expectations
-```
 
 ## Summary
 
@@ -178,35 +14,39 @@ The data for AY 2015-16 was used in the Department's response
 to the ABET evaluation of our program following the ABET Team
 Visit on October of 2015. 
 
+[45]
+
+[35]
+
 Outcome  | % Excelled | % Mastered | % Partially Mastered | % Below Expectations | #Student Assessments
 :-------:|-----------:|-----------:|---------------------:|---------------------:|------------------------:
-(a)      | `r get.excelled('a')` | `r get.mastered('a')` | `r get.partially.mastered('a')` | `r get.below.expectations('a')` | `r num.assessed('a')`
-(b)      | `r get.excelled('b')` | `r get.mastered('b')` | `r get.partially.mastered('b')` | `r get.below.expectations('b')` | `r num.assessed('b')`
-(c)      | `r get.excelled('c')` | `r get.mastered('c')` | `r get.partially.mastered('c')` | `r get.below.expectations('c')` | `r num.assessed('c')`
-(d)      | `r get.excelled('d')` | `r get.mastered('d')` | `r get.partially.mastered('d')` | `r get.below.expectations('d')` | `r num.assessed('d')`
-(e)      | `r get.excelled('e')` | `r get.mastered('e')` | `r get.partially.mastered('e')` | `r get.below.expectations('e')` | `r num.assessed('e')`
-(f)      | `r get.excelled('f')` | `r get.mastered('f')` | `r get.partially.mastered('f')` | `r get.below.expectations('f')` | `r num.assessed('f')`
-(g)      | `r get.excelled('g')` | `r get.mastered('g')` | `r get.partially.mastered('g')` | `r get.below.expectations('g')`| `r num.assessed('g')`
-(h)      | `r get.excelled('h')` | `r get.mastered('h')` | `r get.partially.mastered('h')` | `r get.below.expectations('h')`| `r num.assessed('h')`
-(i)      | `r get.excelled('i')` | `r get.mastered('i')` | `r get.partially.mastered('i')` | `r get.below.expectations('i')`| `r num.assessed('i')`
-(j)      | `r get.excelled('j')` | `r get.mastered('j')` | `r get.partially.mastered('j')` | `r get.below.expectations('j')`| `r num.assessed('j')`
-(k)      | `r get.excelled('k')` | `r get.mastered('k')` | `r get.partially.mastered('k')` | `r get.below.expectations('k')`| `r num.assessed('k')`
+(a)      | 45 | 35 | 9 | 11 | 185
+(b)      | 60 | 32 | 8 | 0 | 63
+(c)      | 58 | 22 | 9 | 11 | 232
+(d)      | 53 | 24 | 19 | 4 | 165
+(e)      | 98 | 2 | 0 | 0 | 96
+(f)      | 67 | 29 | 4 | 0 | 99
+(g)      | 100 | 0 | 0 | 0| 48
+(h)      | 81 | 10 | 9 | 0| 81
+(i)      | 56 | 26 | 10 | 7| 96
+(j)      | 42 | 21 | 20 | 17| 66
+(k)      | 74 | 8 | 2 | 16| 383
 
 Considering Excelled and Mastered to "Satisfy" each student outcome, we can look at historical trends.
 
 Outcome | %Satisfied 2014-15       | %Satisfied 2015-16       | Change
 :------:|-------------------------:|-------------------------:|--------------------------------:
-(a)     | `r history.pass[1, 'a']` | `r history.pass[2, 'a']` | `r history.pass[2, 'a'] - history.pass[1, 'a']`
-(b)     | `r history.pass[1, 'b']` | `r history.pass[2, 'b']` | `r history.pass[2, 'b'] - history.pass[1, 'b']`
-(c)     | `r history.pass[1, 'c']` | `r history.pass[2, 'c']` | `r history.pass[2, 'c'] - history.pass[1, 'c']`
-(d)     | `r history.pass[1, 'd']` | `r history.pass[2, 'd']` | `r history.pass[2, 'd'] - history.pass[1, 'd']`
-(e)     | `r history.pass[1, 'e']` | `r history.pass[2, 'e']` | `r history.pass[2, 'e'] - history.pass[1, 'e']`
-(f)     | `r history.pass[1, 'f']` | `r history.pass[2, 'f']` | `r history.pass[2, 'f'] - history.pass[1, 'f']`
-(g)     | `r history.pass[1, 'g']` | `r history.pass[2, 'g']` | `r history.pass[2, 'g'] - history.pass[1, 'g']`
-(h)     | `r history.pass[1, 'h']` | `r history.pass[2, 'h']` | `r history.pass[2, 'h'] - history.pass[1, 'h']`
-(i)     | `r history.pass[1, 'i']` | `r history.pass[2, 'i']` | `r history.pass[2, 'i'] - history.pass[1, 'i']`
-(j)     | `r history.pass[1, 'j']` | `r history.pass[2, 'j']` | `r history.pass[2, 'j'] - history.pass[1, 'j']`
-(k)     | `r history.pass[1, 'k']` | `r history.pass[2, 'k']` | `r history.pass[2, 'k'] - history.pass[1, 'k']`
+(a)     | 72 | 80 | 8
+(b)     | 83 | 92 | 9
+(c)     | 79 | 80 | 1
+(d)     | 83 | 77 | -6
+(e)     | 100 | 100 | 0
+(f)     | 89 | 96 | 7
+(g)     | 100 | 100 | 0
+(h)     | 100 | 91 | -9
+(i)     | 91 | 82 | -9
+(j)     | 94 | 63 | -31
+(k)     | 64 | 82 | 18
 
 As the table shows, the percentage of students who satisfy each outcome is mostly the same in
 the two years for which we have data.  The outcomes (j) and (k) show the most difference, and
@@ -218,49 +58,54 @@ More details of student assessment can be seen by considering the assessment of 
 
 Outcome | KPI    | % Excelled | % Mastered | % Partially Mastered | % Below Expectations | #Student Assessments
 :------:|:------:|-----------:|-----------:|---------------------:|---------------------:|--------------------:
-(a)     | (a.1)  |  `r get.excelled('a1')` | `r get.mastered('a1')` | `r get.partially.mastered('a1')` | `r get.below.expectations('a1')` | `r num.assessed('a1')`
-&nbsp;  | (a.2)  |  `r get.excelled('a2')` | `r get.mastered('a2')` | `r get.partially.mastered('a2')` | `r get.below.expectations('a2')` | `r num.assessed('a2')`
-&nbsp;  | (a.3)  |  `r get.excelled('a3')` | `r get.mastered('a3')` | `r get.partially.mastered('a3')` | `r get.below.expectations('a3')` | `r num.assessed('a3')`
-&nbsp;  | (a.4)  |  `r get.excelled('a4')` | `r get.mastered('a4')` | `r get.partially.mastered('a4')` | `r get.below.expectations('a4')` | `r num.assessed('a4')`
-&nbsp;  | (a.5)  |  `r get.excelled('a5')` | `r get.mastered('a5')` | `r get.partially.mastered('a5')` | `r get.below.expectations('a5')` | `r num.assessed('a5')`
-&nbsp;  | (a.6)  |  `r get.excelled('a6')` | `r get.mastered('a6')` | `r get.partially.mastered('a6')` | `r get.below.expectations('a6')` | `r num.assessed('a6')`
-(b)     | (b.1)  |  `r get.excelled('b1')` | `r get.mastered('b1')` | `r get.partially.mastered('b1')` | `r get.below.expectations('b1')` | `r num.assessed('b1')`
-&nbsp;  | (b.2)  |  `r get.excelled('b2')` | `r get.mastered('b2')` | `r get.partially.mastered('b2')` | `r get.below.expectations('b2')` | `r num.assessed('b2')`
-(c)     | (c.1)  |  `r get.excelled('c1')` | `r get.mastered('c1')` | `r get.partially.mastered('c1')` | `r get.below.expectations('c1')` | `r num.assessed('c1')`
-&nbsp;  | (c.2)  |  `r get.excelled('c2')` | `r get.mastered('c2')` | `r get.partially.mastered('c2')` | `r get.below.expectations('c2')` | `r num.assessed('c2')`
-&nbsp;  | (c.3)  |  `r get.excelled('c3')` | `r get.mastered('c3')` | `r get.partially.mastered('c3')` | `r get.below.expectations('c3')` | `r num.assessed('c3')`
-&nbsp;  | (c.4)  |  `r get.excelled('c4')` | `r get.mastered('c4')` | `r get.partially.mastered('c4')` | `r get.below.expectations('c4')` | `r num.assessed('c4')`
-&nbsp;  | (c.5)  |  `r get.excelled('c5')` | `r get.mastered('c5')` | `r get.partially.mastered('c5')` | `r get.below.expectations('c5')` | `r num.assessed('c5')`
-(d)     | (d.1)  |  `r get.excelled('d1')` | `r get.mastered('d1')` | `r get.partially.mastered('d1')` | `r get.below.expectations('d1')` | `r num.assessed('d1')`
-&nbsp;  | (d.2)  |  `r get.excelled('d2')` | `r get.mastered('d2')` | `r get.partially.mastered('d2')` | `r get.below.expectations('d2')` | `r num.assessed('d2')`
-&nbsp;  | (d.3)  |  `r get.excelled('d3')` | `r get.mastered('d3')` | `r get.partially.mastered('d3')` | `r get.below.expectations('d3')` | `r num.assessed('d3')`
-&nbsp;  | (d.4)  |  `r get.excelled('d4')` | `r get.mastered('d4')` | `r get.partially.mastered('d4')` | `r get.below.expectations('d4')` | `r num.assessed('d4')`
-&nbsp;  | (d.5)  |  `r get.excelled('d5')` | `r get.mastered('d5')` | `r get.partially.mastered('d5')` | `r get.below.expectations('d5')` | `r num.assessed('d5')`
-(e)     | (e.1)  |  `r get.excelled('e1')` | `r get.mastered('e1')` | `r get.partially.mastered('e1')` | `r get.below.expectations('e1')` | `r num.assessed('e1')`
-&nbsp;  | (e.2)  |  `r get.excelled('e2')` | `r get.mastered('e2')` | `r get.partially.mastered('e2')` | `r get.below.expectations('e2')` | `r num.assessed('e2')`
-&nbsp;  | (e.3)  |  `r get.excelled('e3')` | `r get.mastered('e3')` | `r get.partially.mastered('e3')` | `r get.below.expectations('e3')` | `r num.assessed('e3')`
-&nbsp;  | (e.4)  |  `r get.excelled('e4')` | `r get.mastered('e4')` | `r get.partially.mastered('e4')` | `r get.below.expectations('e4')` | `r num.assessed('e4')`
-(f)     | (f.1)  |  `r get.excelled('f1')` | `r get.mastered('f1')` | `r get.partially.mastered('f1')` | `r get.below.expectations('f1')` | `r num.assessed('f1')`
-&nbsp;  | (f.2)  |  `r get.excelled('f2')` | `r get.mastered('f2')` | `r get.partially.mastered('f2')` | `r get.below.expectations('f2')` | `r num.assessed('f2')`
-&nbsp;  | (f.3)  |  `r get.excelled('f3')` | `r get.mastered('f3')` | `r get.partially.mastered('f3')` | `r get.below.expectations('f3')` | `r num.assessed('f3')`
-(g)     | (g.1)  |  `r get.excelled('g1')` | `r get.mastered('g1')` | `r get.partially.mastered('g1')` | `r get.below.expectations('g1')` | `r num.assessed('g1')`
-&nbsp;  | (g.2)  |  `r get.excelled('g2')` | `r get.mastered('g2')` | `r get.partially.mastered('g2')` | `r get.below.expectations('g2')` | `r num.assessed('g2')`
-(h)     | (h.1)  |  `r get.excelled('h1')` | `r get.mastered('h1')` | `r get.partially.mastered('h1')` | `r get.below.expectations('h1')` | `r num.assessed('h1')`
-&nbsp;  | (h.2)  |  `r get.excelled('h2')` | `r get.mastered('h2')` | `r get.partially.mastered('h2')` | `r get.below.expectations('h2')` | `r num.assessed('h2')`
-&nbsp;  | (h.3)  |  `r get.excelled('h3')` | `r get.mastered('h3')` | `r get.partially.mastered('h3')` | `r get.below.expectations('h3')` | `r num.assessed('h3')`
-(i)     | (i.1)  |  `r get.excelled('i1')` | `r get.mastered('i1')` | `r get.partially.mastered('i1')` | `r get.below.expectations('i1')` | `r num.assessed('i1')`
-&nbsp;  | (i.2)  |  `r get.excelled('i2')` | `r get.mastered('i2')` | `r get.partially.mastered('i2')` | `r get.below.expectations('i2')` | `r num.assessed('i2')`
-&nbsp;  | (i.3)  |  `r get.excelled('i3')` | `r get.mastered('i3')` | `r get.partially.mastered('i3')` | `r get.below.expectations('i3')` | `r num.assessed('i3')`
-&nbsp;  | (i.4)  |  `r get.excelled('i4')` | `r get.mastered('i4')` | `r get.partially.mastered('i4')` | `r get.below.expectations('i4')` | `r num.assessed('i4')`
-(j)     | (j.1)  |  `r get.excelled('j1')` | `r get.mastered('j1')` | `r get.partially.mastered('j1')` | `r get.below.expectations('j1')` | `r num.assessed('j1')`
-&nbsp;  | (j.2)  |  `r get.excelled('j2')` | `r get.mastered('j2')` | `r get.partially.mastered('j2')` | `r get.below.expectations('j2')` | `r num.assessed('j2')`
-&nbsp;  | (j.3)  |  `r get.excelled('j3')` | `r get.mastered('j3')` | `r get.partially.mastered('j3')` | `r get.below.expectations('j3')` | `r num.assessed('j3')`
-&nbsp;  | (j.4)  |  `r get.excelled('j4')` | `r get.mastered('j4')` | `r get.partially.mastered('j4')` | `r get.below.expectations('j4')` | `r num.assessed('j4')`
-&nbsp;  | (j.5)  |  `r get.excelled('j5')` | `r get.mastered('j5')` | `r get.partially.mastered('j5')` | `r get.below.expectations('j5')` | `r num.assessed('j5')`
-(k)     | (k.1)  |  `r get.excelled('k1')` | `r get.mastered('k1')` | `r get.partially.mastered('k1')` | `r get.below.expectations('k1')` | `r num.assessed('k1')`
-&nbsp;  | (k.2)  |  `r get.excelled('k2')` | `r get.mastered('k2')` | `r get.partially.mastered('k2')` | `r get.below.expectations('k2')` | `r num.assessed('k2')`
-&nbsp;  | (k.3)  |  `r get.excelled('k3')` | `r get.mastered('k3')` | `r get.partially.mastered('k3')` | `r get.below.expectations('k3')` | `r num.assessed('k3')`
-&nbsp;  | (k.4)  |  `r get.excelled('k4')` | `r get.mastered('k4')` | `r get.partially.mastered('k4')` | `r get.below.expectations('k4')` | `r num.assessed('k4')`
+(a)     | (a.1)  |  39 | 41 | 6 | 14 | 51
+&nbsp;  | (a.2)  |  25 | 17 | 8 | 50 | 24
+&nbsp;  | (a.3)  |  54 | 4 | 38 | 4 | 24
+&nbsp;  | (a.4)  |  92 | 0 | 4 | 4 | 24
+&nbsp;  | (a.5)  |  39 | 58 | 3 | 0 | 31
+&nbsp;  | (a.6)  |  35 | 65 | 0 | 0 | 31
+(b)     | (b.1)  |  * | * | * | * | 0
+&nbsp;  | (b.2)  |  60 | 32 | 8 | 0 | 63
+(c)     | (c.1)  |  77 | 11 | 0 | 11 | 35
+&nbsp;  | (c.2)  |  69 | 20 | 0 | 11 | 35
+&nbsp;  | (c.3)  |  58 | 24 | 9 | 8 | 96
+&nbsp;  | (c.4)  |  64 | 12 | 15 | 9 | 33
+&nbsp;  | (c.5)  |  18 | 42 | 21 | 18 | 33
+(d)     | (d.1)  |  52 | 9 | 30 | 9 | 33
+&nbsp;  | (d.2)  |  91 | 0 | 0 | 9 | 33
+&nbsp;  | (d.3)  |  79 | 0 | 21 | 0 | 33
+&nbsp;  | (d.4)  |  18 | 58 | 24 | 0 | 33
+&nbsp;  | (d.5)  |  24 | 55 | 21 | 0 | 33
+(e)     | (e.1)  |  100 | 0 | 0 | 0 | 24
+&nbsp;  | (e.2)  |  100 | 0 | 0 | 0 | 24
+&nbsp;  | (e.3)  |  100 | 0 | 0 | 0 | 24
+&nbsp;  | (e.4)  |  92 | 8 | 0 | 0 | 24
+(f)     | (f.1)  |  24 | 64 | 12 | 0 | 33
+&nbsp;  | (f.2)  |  100 | 0 | 0 | 0 | 33
+&nbsp;  | (f.3)  |  76 | 24 | 0 | 0 | 33
+(g)     | (g.1)  |  100 | 0 | 0 | 0 | 24
+&nbsp;  | (g.2)  |  100 | 0 | 0 | 0 | 24
+(h)     | (h.1)  |  100 | 0 | 0 | 0 | 24
+&nbsp;  | (h.2)  |  55 | 24 | 21 | 0 | 33
+&nbsp;  | (h.3)  |  100 | 0 | 0 | 0 | 24
+(i)     | (i.1)  |  32 | 52 | 12 | 4 | 25
+&nbsp;  | (i.2)  |  50 | 0 | 0 | 50 | 12
+&nbsp;  | (i.3)  |  73 | 0 | 27 | 0 | 26
+&nbsp;  | (i.4)  |  64 | 36 | 0 | 0 | 33
+(j)     | (j.1)  |  * | * | * | * | 0
+&nbsp;  | (j.2)  |  * | * | * | * | 0
+&nbsp;  | (j.3)  |  66 | 0 | 16 | 19 | 32
+&nbsp;  | (j.4)  |  11 | 56 | 22 | 11 | 18
+&nbsp;  | (j.5)  |  31 | 25 | 25 | 19 | 16
+(k)     | (k.1)  |  52 | 27 | 9 | 12 | 33
+&nbsp;  | (k.2)  |  77 | 0 | 0 | 23 | 252
+&nbsp;  | (k.3)  |  60 | 32 | 8 | 0 | 63
+&nbsp;  | (k.4)  |  100 | 0 | 0 | 0 | 35
+
+As this table shows, some of the PKIs were not assessed in the current cycle. This is due to a family 
+emergency that prevented assessment of COSC 3020 from being complete as of the time of this writing
+While this may skew the results a little, the comparisons with last year's assessments lead us to believe that
+the final results will be substantially similar.
 
 ## Assessment Data
 
@@ -537,85 +382,6 @@ COSC 3020: Algorithms & Data Structures | Every other year, starting 2016-17
     20 students mastered.
     no students partially mastered.
     no students were below expectations.
-
----
-
-    Performance Indicator (b.1) :  Identify key components and algorithms necessary for a solution
-
-    Problem 3.1 from Exam 3
-
-    Partition can be used to solve the Selection problem. 
-
-    What is the expected time complexity of this solution when the required value is the smallest value in the collection?
-
-    Explain your answer.
-
-
-    31 students were assessed.
-
-    5 students excelled.
-    11 students mastered.
-    9 students partially mastered.
-    6 students were below expectations.
-
----
-    Performance Indicator (j.1) :  Analyze the asymptotic cost of divide-and-conquer algorithms
-
-    Lab 3
-
-    Topic:  Iterative Versions of MergeSort
-
-    part 4. Verity that the experimental time complexity of the call to mergesort is order $n \log n$.
-
-    part 6. I expect the time complexity of the new version of mergesort to have time complexity $(n^p)$.
-
-        Use experimental time complexity analysis to determine p.
-
-        Why does the new version of mergesort have this slower time complexity?
-
-    32 students were assessed.
-
-    17 students excelled.
-    11 students mastered.
-    2 students partially mastered.
-    2 students were below expectations.
-
----
-
-    Performance Indicator (j.2) :  Analyze the asymptotic cost of recursive algorithms
-
-    Problem 1.3 from Exam 1
-
-        Give a recurrence relation for the time required by this C++ function.  The size of the problem is the value of jump.
-
-    int stumble( int jump ) 
-    {
-        if( jump < 8 ) 
-        {
-            return jump;
-        }
-        
-        int step = 3;
-        while( step * step < jump )
-        {
-            ++step;
-        }
-
-        int distance = 0;
-        for( int i=0; i<step; ++i )
-        {
-            distance += stumble( step );
-        }
-        return distance;
-    }
-
-
-    33 students were assessed.
-
-    2 students excelled.
-    9 students mastered.
-    7 students partially mastered.
-    15 students were below expectations.
 
 ---
 
