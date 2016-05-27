@@ -8,7 +8,7 @@ COSC 1010: Intro to Programming         | &check;  | &check;  | &bull;  | &bull;
 COSC 2030: Programming II               | &check;  | &check;  | &bull;  | &bull;  | &bull;  | &bull;  | &bull; 
 COSC 2300: Discrete Mathematics         | &check;  | &check;  | &bull;  | &bull;  | &bull;  | &bull;  | &bull; 
 COSC 3011: Software Design              | &check;  | &check;  | &bull;  | &bull;  | &bull;  | &bull;  | &bull; 
-COSC 3020: Algorithms & Data Structures | &check;  | &check; / &bull;  | &bull;  |         | &bull;  |         | &bull; 
+COSC 3020: Algorithms & Data Structures | &check;  | &check;  | &bull;  |         | &bull;  |         | &bull; 
 COSC 3050: Ethics                       | &check;  | &check;  | &bull;  |         | &bull;  |         | &bull; 
 COSC 4950: Senior Design I              | &check;  | &check;  |         | &bull;  |         | &bull;  |        
 COSC 4955: Senior Design II             | &check;  | &check;  |         | &bull;  |         | &bull;  |        
