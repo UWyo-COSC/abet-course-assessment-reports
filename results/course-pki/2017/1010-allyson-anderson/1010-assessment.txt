@@ -1,0 +1,23 @@
+Ruben,
+ 
+Here is the COSC 1010 assessment data for the fall 2016 – spring 2017 school year.  I used the data from the fall semester.
+ 
+COSC 1010 – Introduction to Computer Science I, fall semester 2016
+ 
+Performance Indicator (i.2): Program in Java, including use of the Java collections and other useful Java frameworks
+ 
+Homework 8:  The salesReport project allows an employee to enter a simple daily sales report and prints out the results. The employee must enter his username and password. After verifying the username and password, the program allows the employee to enter his sales details for the day. Sales details include the product name, product ID#, price, and quantity sold. An object should be created for each product and then added to the daily collection of product objects. When the salesperson is finished entering data, the program calculates the total cash value of the salesperson's sales for the day and prints out the report. 
+ 
+There were 43 Computer Science majors in the course, 5 of them did not turn in the assignment.
+ 
+38 students were assessed.
+30 excelled
+5 mastered
+1 partially mastered
+2 failed
+ 
+attachment: Homework 8
+ 
+As always, I appreciate all the work you have done and are still doing for the ABET accreditation.
+ 
+Allyson
