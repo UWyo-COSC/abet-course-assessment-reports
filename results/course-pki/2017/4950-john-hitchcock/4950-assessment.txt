@@ -1,0 +1,168 @@
+◆ This message was sent from a non-UWYO address. Please exercise caution when clicking links or opening attachments from external sources.
+
+
+Hi Ruben,
+
+Here's what I was able to come up with for senior design last year. Most of the KPIs were not specifically measured, so I matched them as best I could with assignments and based the data below on grades. There are a few KPIs where we have no relevant data, so I left those at 0 students assessed.
+
+We'll be able to assess all of these this year. Sorry there's not better data for last year.
+
+John
+
+
+
+4950 - Fall 2018
+
+(c.1) Identify constraints on the design problem
+
+Performance Indicator: Project Description
+46 computer science majors were assessed.
+46 students mastered.
+
+(c.2) Establish acceptance criteria for a solution
+
+Performance Indicator: Project Description
+46 computer science majors were assessed.
+46 students mastered.
+
+
+4955 - Spring 2019
+
+(c.3) Design the selected solution for a given problem
+
+Performance Indicator: Project Plan
+43 computer science majors were assessed.
+18 students excelled.
+22 students mastered.
+3 students partially mastered.
+
+(c.4) Implement the designed solution for a given problem
+
+Performance Indicator: Final Demo
+43 computer science majors were assessed.
+25 students excelled.
+8 students mastered.
+7 students partially mastered.
+3 students were below expectations.
+
+(c.5) Evaluate the implemented solution
+
+0 computer science majors were assessed.
+
+(d.1) Listen to other team members
+
+0 computer science majors were assessed.
+
+(d.2) Actively discuss team projects, objectives, or challenges with other team members
+
+Performance Indicator: Classroom discussions
+43 computer science majors were assessed.
+43 students mastered.
+
+(d.3) Fulfill team duties on time
+
+Performance Indicator: Final Demo and Presentation
+43 computer science majors were assessed.
+25 students excelled.
+8 students mastered.
+7 students partially mastered.
+3 students were below expectations.
+
+(d.4) Share in the work of the team
+
+0 computer science majors were assessed.
+
+(d.5) Research and gather information
+
+0 computer science majors were assessed.
+
+(f.1) Write technical reports
+
+Performance Indicator: Project Plan
+43 computer science majors were assessed.
+18 students excelled.
+22 students mastered.
+3 students partially mastered.
+
+(f.2) Present technical material to technical peers
+
+Performance Indicator: Status Update Presentation
+43 computer science majors were assessed.
+6 students excelled.
+30 students mastered.
+7 students partially mastered.
+
+(f.3) Present technical material to non-technical visitors
+
+Performance Indicator: Final Presentation
+43 computer science majors were assessed.
+5 student excelled.
+18 students mastered.
+17 students partially mastered.
+3 students were below expectations.
+
+
+On Tue, Nov 5, 2019 at 12:08 PM Ruben A Gamboa <ruben@uwyo.edu> wrote:
+
+close
+John & Mike,
+
+I need you to collect some ABET data for me. To be clear, this is CRUCIAL and I need it done as soon as possible.
+
+Specifically, I need you to use the information from the past year of teaching 4950/5 and give me information on each of the following:
+
+4950, John — was 3 KPIs, now 2
+
+(c.1) Identify constraints on the design problem 
+(c.2) Establish acceptance criteria for a solution
+
+4955, John — was 13 KPIs, now 11
+
+(c.3) Design the selected solution for a given problem 
+(c.4) Implement the designed solution for a given problem 
+(c.5) Evaluate the implemented solution
+(d.1) Listen to other team members 
+(d.2) Actively discuss team projects, objectives, or challenges with other team members
+(d.3) Fulfill team duties on time 
+(d.4) Share in the work of the team 
+(d.5) Research and gather information
+(f.1) Write technical reports 
+(f.2) Present technical material to technical peers 
+(f.3) Present technical material to non-technical visitors
+
+For each one of those, you need to tell me:
+
+* What you’re using to assess the performance indicator, e.g., Problem 3 in the Final Exam (and give me a copy of Problem 3 or the entire Final Exam)
+
+* The number of students who were assessed — and these should be computer science majors only, but you can assume they all were for those courses
+
+* The breakdown of those assessed students into:
+
+* Excelled: The work demonstrates clear and irrefutable evidence that the student has fully learned and integrated the given skill. 
+* Mastered: The work demonstrates sufficient evidence that the student has fully learned the given skill, but perhaps has not integrated it in the context of his or her other computing skills. 
+* Partially Mastered: The work demonstrates mixed evidence that the student has learned at least a portion of the given skill. 
+* Below Expectations: The work demonstrates no evidence that the student has learned at least any portion of the given skill.
+
+Here’s an example from my database course:
+
+Performance Indicator (z.3): Use Relational Algebra to extract data from a database
+
+Problem 2 from Exam1: “Suppose Student(sid,sname), Faculty(fid, fname) and Advises(fid,sid) are relations. Write a relational algebra expression that finds all the students advised by ‘John Galt’.”
+
+23 computer science majors were assessed.
+
+10 students excelled.
+8 students mastered.
+4 students partially mastered.
+1 student was below expectations.
+
+Just to be clear, you can use “observation during class presentation” or something like that for the assessment item, and you can assess entire teams together, so all 4 students in a team excel. If you have any questions, let me know. This is pretty much top priority. Thanks.
+
+Clear Skies,
+Ruben
+
+—
+Ruben Gamboa
+Professor and Head
+Department of Computer Science
+University of Wyoming

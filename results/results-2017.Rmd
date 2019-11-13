@@ -3,51 +3,51 @@
 ```{r echo=FALSE}
 num.excelled <- c(
     a1=23+20, a2=16, a3=4, a4=0, a5=0, a6=0,
-    b1=0, b2=0,
-    c1=0, c2=0, c3=0+0, c4=0, c5=0, 
-    d1=0, d2=0, d3=0, d4=0, d5=0,
-    e1=0, e2=0, e3=0, e4=0,
-    f1=0, f2=0, f3=0,
+    b1=10, b2=10+30,
+    c1=0, c2=0, c3=18+30, c4=25, c5=18, 
+    d1=0, d2=0, d3=25, d4=0, d5=0,
+    e1=45, e2=45, e3=45, e4=49,
+    f1=18, f2=6, f3=5,
     g1=0, g2=0,
     h1=0, h2=0, h3=0,
     i1=0, i2=30, i3=0, i4=0,
-    j1=0, j2=0, j3=0, j4=0, j5=0,
+    j1=4, j2=13, j3=24, j4=3, j5=10,
     k1=0, k2=0+0+0+0, k3=0, k4=0)
 num.mastered <- c(
     a1=0+3, a2=5, a3=2, a4=0, a5=0, a6=0,
-    b1=0, b2=0,
-    c1=0, c2=0, c3=0+0, c4=0, c5=0, 
-    d1=0, d2=0, d3=0, d4=0, d5=0,
-    e1=0, e2=0, e3=0, e4=0,
-    f1=0, f2=0, f3=0,
+    b1=9, b2=9+39,
+    c1=46, c2=46, c3=22+39, c4=8, c5=22, 
+    d1=43, d2=43, d3=8, d4=43, d5=43,
+    e1=4, e2=4, e3=4, e4=1,
+    f1=22, f2=30, f3=18,
     g1=0, g2=0,
     h1=0, h2=0, h3=0,
-    i1=0, i2=5, i3=0, i4=0,
-    j1=0, j2=0, j3=0, j4=0, j5=0,
+    i1=5, i2=5, i3=0, i4=0,
+    j1=0, j2=8, j3=8, j4=2, j5=9,
     k1=0, k2=0+0+0+0, k3=0, k4=0)
 num.partially.mastered <- c(
     a1=3+3, a2=3, a3=3, a4=0, a5=0, a6=0,
-    b1=0, b2=0,
-    c1=0, c2=0, c3=0+0, c4=0, c5=0, 
-    d1=0, d2=0, d3=0, d4=0, d5=0,
+    b1=4, b2=4+2,
+    c1=0, c2=0, c3=3+2, c4=7, c5=0, 
+    d1=0, d2=0, d3=7, d4=0, d5=0,
     e1=0, e2=0, e3=0, e4=0,
-    f1=0, f2=0, f3=0,
+    f1=3, f2=7, f3=17,
     g1=0, g2=0,
     h1=0, h2=0, h3=0,
     i1=0, i2=1, i3=0, i4=0,
-    j1=0, j2=0, j3=0, j4=0, j5=0,
+    j1=14, j2=12, j3=0, j4=20, j5=4,
     k1=0, k2=0+0+0+0, k3=0, k4=0)
 num.below.expectations <- c(
     a1=0+0, a2=2, a3=17, a4=0, a5=0, a6=0,
-    b1=0, b2=0,
-    c1=0, c2=0, c3=0+0, c4=0, c5=0, 
-    d1=0, d2=0, d3=0, d4=0, d5=0,
-    e1=0, e2=0, e3=0, e4=0,
-    f1=0, f2=0, f3=0,
+    b1=11, b2=11+7,
+    c1=0, c2=0, c3=0+7, c4=3, c5=0, 
+    d1=0, d2=0, d3=3, d4=0, d5=0,
+    e1=1, e2=1, e3=1, e4=0,
+    f1=0, f2=0, f3=3,
     g1=0, g2=0,
     h1=0, h2=0, h3=0,
     i1=0, i2=2, i3=0, i4=0,
-    j1=0, j2=0, j3=0, j4=0, j5=0,
+    j1=8, j2=0, j3=2, j4=8, j5=11,
     k1=0, k2=0+0+0+0, k3=0, k4=0)
 
 num.excelled['a'] <- sum(num.excelled[paste('a', 1:6, sep="")])
@@ -385,11 +385,29 @@ COSC 3011: Software Design              | Yearly
     Performance Indicator (b.2): Analyze at least two or more proposed solutions 
     to given problem and select the best solution for the given problem.
 
+    This was assessed through the program design project. The teams were required to plan, design, and program a game. This was in five steps over the majority of the semester with the sixth, wrap-up due as the final.
+    I have combined the results of the first five steps of the programming project as I did for the course grade.
+
+    68 students were assessed.
+
+    Excelled: 30 students 
+    Mastered: 39 students 
+    Partially Mastered: 2 students 
+    Below Expectations: 7
 
 ---
 
     Performance Indicator (c.3): Design the selected solution for a given problem. 
 
+    This was assessed through the program design project. The teams were required to plan, design, and program a game. This was in five steps over the majority of the semester with the sixth, wrap-up due as the final.
+    I have combined the results of the first five steps of the programming project as I did for the course grade.
+
+    68 students were assessed.
+
+    Excelled: 30 students 
+    Mastered: 39 students 
+    Partially Mastered: 2 students 
+    Below Expectations: 7
 
 ---
 
@@ -400,7 +418,7 @@ COSC 3011: Software Design              | Yearly
 
     Performance Indicator (k.3): Design the selected solution for a given problem. 
 
-### COSC 3020: Algorithms & Data Structures, Tom Bailey
+### COSC 3020: Algorithms & Data Structures, Lars Kotthoff
 
 Core Course                             | Assessed
 :---------------------------------------|:----------------------------
@@ -427,32 +445,99 @@ COSC 3020: Algorithms & Data Structures | Every other year, starting 2016-17
 
     Performance Indicator (b.1) :  Identify key components and algorithms necessary for a solution
 
+    Assignment 3: Implement two algorithms for solving the traveling salesman 
+    problem and compare them. 
+
+    34 students assessed. 
+
+    10 students excelled. 
+    9 students mastered. 
+    4 students partially mastered. 
+    11 students were below expectations. 
+
+---
+
+    Performance Indicator (b.2) :  Analyze at two or more proposed solutions to a given problem and select the best solution for the given problem 
+
+    Assignment 3: Implement two algorithms for solving the traveling salesman 
+    problem and compare them. 
+
+    34 students assessed. 
+
+    10 students excelled. 
+    9 students mastered. 
+    4 students partially mastered. 
+    11 students were below expectations. 
 
 ---
     Performance Indicator (j.1) :  Analyze the asymptotic cost of divide-and-conquer algorithms
 
+    Question 3 in assignment 2: Implement an iterative and in-place version of merge 
+    sort and analyze its complexity. 
+
+    31 students assessed. 
+
+    4 students excelled. 
+    5 students mastered. 
+    14 students partially mastered. 
+    8 students were below expectations. 
 
 ---
 
     Performance Indicator (j.2) :  Analyze the asymptotic cost of recursive algorithms
 
+    Question 3 in the midterm: Give Theta-bounds for three recurrence 
+    relations. 
+
+    33 students assessed. 
+
+    13 students excelled. 
+    8 students mastered. 
+    12 students partially mastered. 
+    0 students were below expectations. 
 
 ---
 
     Performance Indicator (j.3): Analyze the asymptotic cost of basic graph algorithms
 
+    Lab 7: Implement the Floyd-Warshall algorithm and analyze its complexity. 
+
+    34 students assessed. 
+
+    24 students excelled. 
+    8 students mastered. 
+    2 students were below expectations. 
 
 ---
 
     Performance Indicator (j.4):  Describe the impact of techniques such as caching 
     and dynamic programming on the performance of algorithms
 
+    Question 5 in final: Implement a dynamic programming solution to 
+    compute the Liouville number. 
+
+    33 students assessed. 
+
+    3 students excelled. 
+    2 students mastered. 
+    20 students partially mastered. 
+    8 students were below expectations. 
 
 ---
 
     Performance Indicator (j.5):  Understand the difference between polynomial 
     and exponential complexity
 
+    Assignment 3: Implement two algorithms for solving the traveling salesman 
+    problem (one complete, exponential complexity, one approximate, polynomial 
+    complexity) and compare them. 
+
+    34 students assessed. 
+
+    10 students excelled. 
+    9 students mastered. 
+    4 students partially mastered. 
+    11 students were below expectations. 
 
 ### COSC 3050: Ethics, Kim Buckner
 
@@ -463,19 +548,65 @@ COSC 3050: Ethics                       | Every other year, starting 2016-17
     Performance Indicator (e.1): Recognize ethical issues involved in a 
     professional setting.
 
+    As such I will provide documents relating to the individual topics but only one assessment for student performance for the entire course. There were 24 students assessed. 
+    The assessment consisted of the following.
+
+    Reading their quiz answers and giving full credit if they had an answer at all and that answer was for the question asked. This was the portion that to a large extent caused the students to read the provided material.
+
+    There were 50 students assessed for the two sections of the course.
+
+    Excelled: 45 students 
+    Mastered: 4
+    Partially Mastered: 0 
+    Below Expectations: 1
+
 
 ---
 
     Performance Indicator (e.2): Describe current issues in security. 
 
+    As such I will provide documents relating to the individual topics but only one assessment for student performance for the entire course. There were 24 students assessed. 
+    The assessment consisted of the following.
+
+    Reading their quiz answers and giving full credit if they had an answer at all and that answer was for the question asked. This was the portion that to a large extent caused the students to read the provided material.
+
+    There were 50 students assessed for the two sections of the course.
+
+    Excelled: 45 students 
+    Mastered: 4
+    Partially Mastered: 0 
+    Below Expectations: 1
+
+
 ---
 
     Performance Indicator (e.3): Describe current issues in privacy.
+
+    As such I will provide documents relating to the individual topics but only one assessment for student performance for the entire course. There were 24 students assessed. 
+    The assessment consisted of the following.
+
+    Reading their quiz answers and giving full credit if they had an answer at all and that answer was for the question asked. This was the portion that to a large extent caused the students to read the provided material.
+
+    There were 50 students assessed for the two sections of the course.
+
+    Excelled: 45 students 
+    Mastered: 4
+    Partially Mastered: 0 
+    Below Expectations: 1
 
 
 ---
 
     Performance Indicator (e.4): Respect and honor ethics in writing assignments.
+
+    Their final papers were all reasonable, the biggest problems being grammatical errors es- pecially for our foreign students.
+
+    There were 50 students assessed for the two sections of the course.
+
+    Excelled: 49 students 
+    Mastered: 4
+    Partially Mastered: 0 
+    Below Expectations: 1
 
 ---
 

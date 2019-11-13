@@ -1,0 +1,92 @@
+Hi Ruben, 
+
+here's the information for fall 2018. 
+
+Cheers, 
+
+Lars 
+
+
+
+(b.1) Identify key components and algorithms necessary for a solution 
+
+Assignment 3: Implement two algorithms for solving the traveling salesman 
+problem and compare them. 
+
+34 students assessed. 
+
+10 students excelled. 
+9 students mastered. 
+4 students partially mastered. 
+11 students were below expectations. 
+
+(b.2) Analyze at two or more proposed solutions to a given problem and select the best solution for the given problem 
+
+Assignment 3: Implement two algorithms for solving the traveling salesman 
+problem and compare them. 
+
+34 students assessed. 
+
+10 students excelled. 
+9 students mastered. 
+4 students partially mastered. 
+11 students were below expectations. 
+
+(j.1) Analyze the asymptotic cost of divide-and-conquer algorithms 
+
+Question 3 in assignment 2: Implement an iterative and in-place version of merge 
+sort and analyze its complexity. 
+
+31 students assessed. 
+
+4 students excelled. 
+5 students mastered. 
+14 students partially mastered. 
+8 students were below expectations. 
+
+(j.2) Analyze the asymptotic cost of recursive algorithms 
+
+Question 3 in the midterm: Give Theta-bounds for three recurrence 
+relations. 
+
+33 students assessed. 
+
+13 students excelled. 
+8 students mastered. 
+12 students partially mastered. 
+0 students were below expectations. 
+
+(j.3) Analyze the asymptotic cost of basic graph algorithms 
+
+Lab 7: Implement the Floyd-Warshall algorithm and analyze its complexity. 
+
+34 students assessed. 
+
+24 students excelled. 
+8 students mastered. 
+2 students were below expectations. 
+
+(j.4) Describe the impact of techniques such as caching and dynamic programming on the performance of algorithms 
+
+Question 5 in final: Implement a dynamic programming solution to 
+compute the Liouville number. 
+
+33 students assessed. 
+
+3 students excelled. 
+2 students mastered. 
+20 students partially mastered. 
+8 students were below expectations. 
+
+(j.5) Understand the difference between polynomial and exponential complexity 
+
+Assignment 3: Implement two algorithms for solving the traveling salesman 
+problem (one complete, exponential complexity, one approximate, polynomial 
+complexity) and compare them. 
+
+34 students assessed. 
+
+10 students excelled. 
+9 students mastered. 
+4 students partially mastered. 
+11 students were below expectations. 
