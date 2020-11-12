@@ -175,7 +175,7 @@ history.fail <- history.partially.mastered + history.below.expectations
 ## Summary
 
 The data for AY 2016-17 was used as part of our continuing improvement process
-in the Fall of 2017.
+in the Fall of 2018.
 
 Outcome  | % Excelled | % Mastered | % Partially Mastered | % Below Expectations | #Student Assessments
 :-------:|-----------:|-----------:|---------------------:|---------------------:|------------------------:
