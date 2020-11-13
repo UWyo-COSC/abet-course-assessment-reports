@@ -31,130 +31,82 @@ student assessments (or distinct observations).
 The official list of student outcomes for the Department of Computer Science at the 
 University of Wyoming can be found in the 
 [Course Catalog](http://www.uwyo.edu/registrar/university_catalog/5encosc.html), 
-and in the [Department of Computer Science web pages](http://www.uwyo.edu/cosc/undergraduate_students/abet/).
+and in the [Department of Computer Science web pages](http://www.uwyo.edu/cosc/current_students/undergraduate-students/abet/index.html).
 They are replicated here for convenience:
 
-> Upon graduation, each student should have
+> The program of study in Computer Sci­ence enables students to achieve, by the time of graduation:
 >
-> (a) An ability to apply knowledge of computing and mathematics appropriate to the discipline;
-> (b) An ability to analyze a problem, and identify and define the computing requirements appropriate to its solution;
-> (c) An ability to design, implement and evaluate a computer-based system, process, component, or program to meet desired needs;
-> (d) An ability to function effectively on teams to accomplish a common goal;
-> (e) An understanding of professional, ethical, legal, security, and social issues and responsibilities;
-> (f) An ability to communicate effectively with a range of audiences;
-> (g) An ability to analyze the local and global impact of computing on individuals, organizations and society;
-> (h) Recognition of the need for, and an ability to engage in, continuing professional development;
-> (i) An ability to use current techniques, skills, and tools necessary for computing practices;
-> (j) An ability to apply mathematical foundations, algorithmic principles, and computer science theory in the modeling and design of computer-based systems in a way that demonstrates comprehension of the tradeoffs involved in design choices;
-> (k) An ability to apply design and development principles in the construction of software systems of varying complexity.
+> (1) Analyze a complex computing problem and to apply principles of computing and other relevant disciplines to identify solutions.
+> (2) Design, implement, and evaluate a computing-based solution to meet a given set of computing requirements in the context of the program’s discipline.
+> (3) Communicate effectively in a variety of professional contexts.
+> (4) Recognize professional responsibilities and make informed judgments in computing practice based on legal and ethical principles.
+> (5) Function effectively as a member or leader of a team engaged in activities appropriate to the program’s discipline.
+> (6) Apply computer science theory and software development fundamentals to produce computing-based solutions.
 
 ## Key Performance Indicators
 
 Each student outcome is assessed using one or more performance indicators, and each KPI is assessed in one or more
 core courses, as listed below.  
 
-> (a) An ability to apply knowledge of computing and mathematics appropriate to the discipline;
->     * (a.1) Use discrete mathematics techniques
->     * (a.2) Estimate cardinality of relevant events in computing applications
->     * (a.3) Use mathematical induction to prove mathematical formulas that arise in computing applications
->     * (a.4) Calculate the sum of arithmetic series that arise in computing applications
->     * (a.5) Calculate the sum of geometric series that arise in computing applications
->     * (a.6) Use calculus to find the asymptotic limit of functions
-> (b) An ability to analyze a problem, and identify and define the computing requirements appropriate to its solution;
+> (1) Analyze a complex computing problem and to apply principles of computing and other relevant disciplines to identify solutions.
 >     * (b.1) Identify key components and algorithms necessary for a solution
 >     * (b.2) Analyze at two or more proposed solutions to a given problem and select the best solution for the given problem
-> (c) An ability to design, implement and evaluate a computer-based system, process, component, or program to meet desired needs;
+> (2) Design, implement, and evaluate a computing-based solution to meet a given set of computing requirements in the context of the program’s discipline.
 >     * (c.1) Identify constraints on the design problem
 >     * (c.2) Establish acceptance criteria for a solution
 >     * (c.3) Design the selected solution for a given problem
 >     * (c.4) Implement the designed solution for a given problem
 >     * (c.5) Evaluate the implemented solution
-> (d) An ability to function effectively on teams to accomplish a common goal;
+> (3) Communicate effectively in a variety of professional contexts.
+>     * (f.1) Write technical reports
+>     * (f.2) Present technical material to technical peers
+>     * (f.3) Present technical material to non-technical visitors
+> (4) Recognize professional responsibilities and make informed judgments in computing practice based on legal and ethical principles.
+>     * (e.1) Recognize ethical issues involved in a professional setting
+>     * (e.2) Describe current issues in security
+>     * (e.3) Describe current issues in privacy
+>     * (e.4) Respect and honor ethics in writing assignments
+> (5) Function effectively as a member or leader of a team engaged in activities appropriate to the program’s discipline.
 >     * (d.1) Listen to other team members
 >     * (d.2) Actively discuss team projects, objectives, or challenges with other team members
 >     * (d.3) Fulfill team duties on time
 >     * (d.4) Share in the work of the team
 >     * (d.5) Research and gather information
-> (e) An understanding of professional, ethical, legal, security, and social issues and responsibilities;
->     * (e.1) Recognize ethical issues involved in a professional setting
->     * (e.2) Describe current issues in security
->     * (e.3) Describe current issues in privacy
->     * (e.4) Respect and honor ethics in writing assignments
-> (f) An ability to communicate effectively with a range of audiences;
->     * (f.1) Write technical reports
->     * (f.2) Present technical material to technical peers
->     * (f.3) Present technical material to non-technical visitors
-> (g) An ability to analyze the local and global impact of computing on individuals, organizations and society;
->     * (g.1) Understand impact of computing solutions on society in a global economic context
->     * (g.2) Describe non-technical computing issues such as sustainability, entrepreneurship, and outsourcing
-> (h) Recognition of the need for, and an ability to engage in, continuing professional development;
->     * (h.1) Read and report on papers in the technical literature
->     * (h.2) Participate in professional activities
->     * (h.3) Review articles, chapters, or presentations from the professional literature
-> (i) An ability to use current techniques, skills, and tools necessary for computing practices;
->     * (i.1) Program in C++, including use of the C++ Standard Library
->     * (i.2) Program in Java, including use of the Java collections and other useful Java frameworks
->     * (i.3) Use an IDE to edit, compile, and debug a program
->     * (i.4) Use source code control to manage different versions of a program
-> (j) An ability to apply mathematical foundations, algorithmic principles, and computer science theory in the modeling and design of computer-based systems in a way that demonstrates comprehension of the tradeoffs involved in design choices;
+> (6) Apply computer science theory and software development fundamentals to produce computing-based solutions.
 >     * (j.1) Analyze the asymptotic cost of divide-and-conquer algorithms
 >     * (j.2) Analyze the asymptotic cost of recursive algorithms
 >     * (j.3) Analyze the asymptotic cost of basic graph algorithms
 >     * (j.4) Describe the impact of techniques such as caching and dynamic programming on the performance of algorithms
 >     * (j.5) Understand the difference between polynomial and exponential complexity
-> (k) An ability to apply design and development principles in the construction of software systems of varying complexity.
->     * (k.1) Design the overall architecture of a software system
->     * (k.2) Describe commonly used design patterns
->     * (k.3) Design the interface of specific software modules
->     * (k.4) Describe agile methods of software development
 
 The KPIs are discussed and assessed (bold) in the following courses:
 
 Outcome | KPI    | Supporting and Assessing (Bold) Courses
 :------:|:------:|---------------------------------------
-(a)     | (a.1)  | **2300**, 3020
-&nbsp;  | (a.2)  | **2300**, 3020
-&nbsp;  | (a.3)  | **2300**
-&nbsp;  | (a.4)  | 2300, **3020**
-&nbsp;  | (a.5)  | 2300, **3020**
-&nbsp;  | (a.6)  | MATH 2205, **3020**
-(b)     | (b.1)  | 1030, 2030, 3011, **3020**
+(1)     | (b.1)  | 1030, 2030, 3011, **3020**
 &nbsp;  | (b.2)  | 1030, 2030, **3011, 3020**
-(c)     | (c.1)  | 3011, **4950**
+(2)     | (c.1)  | 3011, **4950**
 &nbsp;  | (c.2)  | 3011, **4950**
 &nbsp;  | (c.3)  | **3011, 4955**
 &nbsp;  | (c.4)  | 3011, **4955**
 &nbsp;  | (c.5)  | 2030, 3020, **4955**
-(d)     | (d.1)  | 4950, **4955**
+(3)     | (f.1)  | 3050, 4950, **4955**
+&nbsp;  | (f.2)  | 3050, 4950, **4955**
+&nbsp;  | (f.3)  | 3050, 4950, **4955**
+(4)     | (e.1)  | **3050**
+&nbsp;  | (e.2)  | **3050**
+&nbsp;  | (e.3)  | **3050**
+&nbsp;  | (e.4)  | **3050**
+(5)     | (d.1)  | 4950, **4955**
 &nbsp;  | (d.2)  | 4950, **4955**
 &nbsp;  | (d.3)  | 4950, **4955**
 &nbsp;  | (d.4)  | 4950, **4955**
 &nbsp;  | (d.5)  | 4950, **4955**
-(e)     | (e.1)  | **3050**
-&nbsp;  | (e.2)  | **3050**
-&nbsp;  | (e.3)  | **3050**
-&nbsp;  | (e.4)  | **3050**
-(f)     | (f.1)  | 3050, 4950, **4955**
-&nbsp;  | (f.2)  | 3050, 4950, **4955**
-&nbsp;  | (f.3)  | 3050, 4950, **4955**
-(g)     | (g.1)  | **3050**
-&nbsp;  | (g.2)  | **3050**
-(h)     | (h.1)  | ES 1101, **3050**
-&nbsp;  | (h.2)  | ES 1101, **3050, 4955**
-&nbsp;  | (h.3)  | ES 1101, **3050**
-(i)     | (i.1)  | 1030, **2030**
-&nbsp;  | (i.2)  | **1010**
-&nbsp;  | (i.3)  | 1010, 1030, **2030**
-&nbsp;  | (i.4)  | 4210, 4220, 4950, **4955**
-(j)     | (j.1)  | 1030, 2030, **3020**
+(6)     | (j.1)  | 1030, 2030, **3020**
 &nbsp;  | (j.2)  | 3015, **3020**
 &nbsp;  | (j.3)  | 2030, 2300, **3020**
 &nbsp;  | (j.4)  | 1030, 2030, **3020**
 &nbsp;  | (j.5)  | 1030, 2030, 3015, **3020**
-(k)     | (k.1)  | 3011, 4210, 4220, 4820, **4955**
-&nbsp;  | (k.2)  | 1030, 2030, **3011**
-&nbsp;  | (k.3)  | **3011**
-&nbsp;  | (k.4)  | 4220, **4950**
 
 The assessment plan is closely tied to the **core courses**
 in the program, since these courses must be taken by all of
@@ -164,33 +116,25 @@ assessment plan of all key performance indicators.
 
 Core Course                             | KPIs                        | Outcomes
 :---------------------------------------|:----------------------------|:--------
-COSC 1010: Intro to Programming         | (i.2)                       | (i)
-COSC 1030: Programming I                | &nbsp;                      | &nbsp;
-COSC 2030: Programming II               | (i.1), (i.3)                | (i)
-COSC 2150: Computer Organization        | &nbsp;                      | &nbsp;
-COSC 2300: Discrete Mathematics         | (a.1), (a.2), (a.3)         | (a)
-COSC 3011: Software Design              | (b.2), (c.3), (k.2), (k.3)  | (k)
-COSC 3020: Algorithms & Data Structures | (a.4), (a.5), (a.6), (b.1), (b.2), (j.1), (j.2), (j.3), (j.4), (j.5)  | (a), (b), (j)
-COSC 3050: Ethics                       | (e.1), (e.2), (e.3), (e.4), (g.1), (g.2), (h.1), (h.3)  | (e), (g), (h)
-COSC 4950: Senior Design I              | (c.1), (c.2), (k.4)         | (c), (k)
-COSC 4955: Senior Design II             | (c.3), (c.4), (c.5), (d.1), (d.2), (d.3), (d,4), (d.5), (f.1), (f.2), (f.3), (h.2), (i.4), (k.1)  | (c), (d), (f), (i), (k)
+COSC 3011: Software Design              | (b.2), (c.3)                | (1), (2)
+COSC 3020: Algorithms & Data Structures | (b.1), (b.2), (j.1), (j.2), (j.3), (j.4), (j.5)  | (1), (6)
+COSC 3050: Ethics                       | (e.1), (e.2), (e.3), (e.4)  | (4)
+COSC 4950: Senior Design I              | (c.1), (c.2)                | (2)
+COSC 4955: Senior Design II             | (c.3), (c.4), (c.5), (d.1), (d.2), (d.3), (d,4), (d.5), (f.1), (f.2), (f.3) | (2), (3), (5)
 
 ## Evaluation Schedule Master Plan
 
-As the KPI assessment table shows, the assessment effort cannot be spread equally 
-across all of the core courses. Consequently, we have devised a testing cycle that 
-takes this into account:
+We have devised a testing cycle that spreads data collection into two-year cycles.
+The undergraduate committee meets yearly to analyze the latest assessment data and
+offer suggestions for improvement.
+We are currently scheduling COSC 3020 yearly, because students
+continue to struggle, but it will convert into a two-year cycle in the future.
 
 Core Course                             | Assessed
 :---------------------------------------|:----------------------------
-COSC 1010: Intro to Programming         | Yearly
-COSC 1030: Programming I                | &nbsp;
-COSC 2030: Programming II               | Yearly
-COSC 2150: Computer Organization        | &nbsp;
-COSC 2300: Discrete Mathematics         | Yearly
-COSC 3011: Software Design              | Yearly
-COSC 3020: Algorithms & Data Structures | Every other year, starting 2016-17
-COSC 3050: Ethics                       | Every other year, starting 2016-17
-COSC 4950: Senior Design I              | Every other year, starting 2017-18
-COSC 4955: Senior Design II             | Every other year, starting 2017-18
+COSC 3011: Software Design              | Every other year, starting 2020-21
+COSC 3020: Algorithms & Data Structures | Yearly (eventually every other year)
+COSC 3050: Ethics                       | Every other year, starting 2020-21
+COSC 4950: Senior Design I              | Every other year, starting 2021-22
+COSC 4955: Senior Design II             | Every other year, starting 2021-22
 
