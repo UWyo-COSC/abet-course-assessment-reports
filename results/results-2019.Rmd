@@ -205,12 +205,15 @@ years <- c(2015, 2016, 2017, 2019)
 year_labels = c('2014-15', '2015-16', '2016-17', '2018-19')
 outcome_map=c('b', 'c', 'f', 'e', 'd', 'j')
 for (idx in c(1, 2, 3, 4, 5, 6)) {
+  # png(paste("outcome-", idx, ".png", sep=""))
   outcome = outcome_map[idx]
   hist <- c(history.pass[1, outcome], history.pass[2, outcome], history.pass[3, outcome], history.pass[4, outcome])
   plot(years, hist, xaxt="n", ylim=c(40,100))
+  abline(h=80, lty=3)
   lines(years, hist)
   axis(side=1, at=years, labels=year_labels)
   title(paste('Outcome (',  idx, ')', sep=""))
+  # dev.off()
 }
 
 ```

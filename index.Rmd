@@ -13,6 +13,7 @@ Its primary purpose is twofold:
 
 Resources:
 
+* [Tour of Facilities](facilities.html)
 * [Evaluation Overview](evaluation.html)
 * [Evaluation Schedule](schedule.html)
 * Past Evaluation Results
