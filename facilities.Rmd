@@ -13,7 +13,7 @@ projects. Then the video shows a common area, also
 on the 4th floor of the Engineering Building, where
 students meet outside of class and often 
 review material or collaborate. That leads to a
-typical classroom, Engineering 4069 where we teach
+typical classroom, Engineering 4066 where we teach
 many of our courses. Next is Engineering 4059, which
 is out of our computer lecture rooms. This room
 features 30 computers that are available to 
@@ -26,3 +26,20 @@ that encourages active learning as opposed to
 lecture-style presentations.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OfrVapm8MGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
+
+## Engineering 4066
+
+Engineering 4066 is a typical classroom in the 4th floor of the
+Engineering building. We teach many of our class there (and in 
+similar rooms).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UDEgbRmWuWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+data-external="1"></iframe>
+
+## Engineering 2159
+
+Engineering 2159 is a computer lab that is open to students for homework or 
+personal use, and that we use to teach some of our lab sections.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J25JPifDqZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
+
