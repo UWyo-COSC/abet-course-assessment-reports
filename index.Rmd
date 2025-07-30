@@ -23,5 +23,6 @@ Resources:
     * [2018-19](results/results-2019.html)
     * [2019-20](results/results-2020.html)
     * [2020-21](results/results-2021.html)
+    * [2023-24](results/results-2024.html)
 
 

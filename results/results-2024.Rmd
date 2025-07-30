@@ -1,0 +1,641 @@
+# ABET Assessment Results for AY 2020-21
+
+```{r echo=FALSE}
+num.excelled <- c(
+    a1=0+0, a2=0, a3=0, a4=0, a5=0, a6=0,
+    b1=11, b2=23+8,
+    c1=37, c2=37, c3=23+37, c4=37, c5=36, 
+    d1=30, d2=37, d3=29, d4=29, d5=29,
+    e1=14, e2=0, e3=0, e4=14, e5=0,
+    f1=33, f2=31, f3=31,
+    g1=0, g2=0,
+    h1=0, h2=0, h3=0,
+    i1=0, i2=0, i3=0, i4=0,
+    j1=8, j2=8, j3=7, j4=18, j5=9,
+    k1=0, k2=0+0+0+0, k3=0, k4=0)
+num.mastered <- c(
+    a1=0+0, a2=0, a3=0, a4=0, a5=0, a6=0,
+    b1=13, b2=24+1,
+    c1=3, c2=3, c3=24+3, c4=3, c5=3, 
+    d1=7, d2=7, d3=6, d4=6, d5=5,
+    e1=4, e2=0, e3=0, e4=4, e5=0,
+    f1=3, f2=5, f3=5,
+    g1=0, g2=0,
+    h1=0, h2=0, h3=0,
+    i1=0, i2=0, i3=0, i4=0,
+    j1=16, j2=12, j3=5, j4=6, j5=9,
+    k1=0, k2=0+0+0+0, k3=0, k4=0)
+num.partially.mastered <- c(
+    a1=0+0, a2=0, a3=0, a4=0, a5=0, a6=0,
+    b1=2, b2=0+3,
+    c1=0, c2=0, c3=2+0, c4=0, c5=0, 
+    d1=0, d2=0, d3=2, d4=2, d5=3,
+    e1=2, e2=0, e3=0, e4=2, e5=0,
+    f1=0, f2=0, f3=0,
+    g1=0, g2=0,
+    h1=0, h2=0, h3=0,
+    i1=0, i2=0, i3=0, i4=0,
+    j1=4, j2=6, j3=0, j4=1, j5=6,
+    k1=0, k2=0+0+0+0, k3=0, k4=0)
+num.below.expectations <- c(
+    a1=0+0, a2=0, a3=0, a4=0, a5=0, a6=0,
+    b1=3, b2=4+14,
+    c1=0, c2=0, c3=2+0, c4=0, c5=1, 
+    d1=0, d2=0, d3=0, d4=0, d5=0,
+    e1=1, e2=0, e3=0, e4=1, e5=0,
+    f1=1, f2=1, f3=1,
+    g1=0, g2=0,
+    h1=0, h2=0, h3=0,
+    i1=0, i2=0, i3=0, i4=0,
+    j1=1, j2=3, j3=6, j4=2, j5=4,
+    k1=0, k2=0+0+0+0, k3=0, k4=0)
+
+num.excelled['a'] <- sum(num.excelled[paste('a', 1:6, sep="")])
+num.excelled['b'] <- sum(num.excelled[paste('b', 1:2, sep="")])
+num.excelled['c'] <- sum(num.excelled[paste('c', 1:5, sep="")])
+num.excelled['d'] <- sum(num.excelled[paste('d', 1:5, sep="")])
+num.excelled['e'] <- sum(num.excelled[paste('e', 1:5, sep="")])
+num.excelled['f'] <- sum(num.excelled[paste('f', 1:3, sep="")])
+num.excelled['g'] <- sum(num.excelled[paste('g', 1:2, sep="")])
+num.excelled['h'] <- sum(num.excelled[paste('h', 1:3, sep="")])
+num.excelled['i'] <- sum(num.excelled[paste('i', 1:4, sep="")])
+num.excelled['j'] <- sum(num.excelled[paste('j', 1:5, sep="")])
+num.excelled['k'] <- sum(num.excelled[paste('k', 1:4, sep="")])
+
+num.mastered['a'] <- sum(num.mastered[paste('a', 1:6, sep="")])
+num.mastered['b'] <- sum(num.mastered[paste('b', 1:2, sep="")])
+num.mastered['c'] <- sum(num.mastered[paste('c', 1:5, sep="")])
+num.mastered['d'] <- sum(num.mastered[paste('d', 1:5, sep="")])
+num.mastered['e'] <- sum(num.mastered[paste('e', 1:5, sep="")])
+num.mastered['f'] <- sum(num.mastered[paste('f', 1:3, sep="")])
+num.mastered['g'] <- sum(num.mastered[paste('g', 1:2, sep="")])
+num.mastered['h'] <- sum(num.mastered[paste('h', 1:3, sep="")])
+num.mastered['i'] <- sum(num.mastered[paste('i', 1:4, sep="")])
+num.mastered['j'] <- sum(num.mastered[paste('j', 1:5, sep="")])
+num.mastered['k'] <- sum(num.mastered[paste('k', 1:4, sep="")])
+
+num.partially.mastered['a'] <- sum(num.partially.mastered[paste('a', 1:6, sep="")])
+num.partially.mastered['b'] <- sum(num.partially.mastered[paste('b', 1:2, sep="")])
+num.partially.mastered['c'] <- sum(num.partially.mastered[paste('c', 1:5, sep="")])
+num.partially.mastered['d'] <- sum(num.partially.mastered[paste('d', 1:5, sep="")])
+num.partially.mastered['e'] <- sum(num.partially.mastered[paste('e', 1:5, sep="")])
+num.partially.mastered['f'] <- sum(num.partially.mastered[paste('f', 1:3, sep="")])
+num.partially.mastered['g'] <- sum(num.partially.mastered[paste('g', 1:2, sep="")])
+num.partially.mastered['h'] <- sum(num.partially.mastered[paste('h', 1:3, sep="")])
+num.partially.mastered['i'] <- sum(num.partially.mastered[paste('i', 1:4, sep="")])
+num.partially.mastered['j'] <- sum(num.partially.mastered[paste('j', 1:5, sep="")])
+num.partially.mastered['k'] <- sum(num.partially.mastered[paste('k', 1:4, sep="")])
+
+num.below.expectations['a'] <- sum(num.below.expectations[paste('a', 1:6, sep="")])
+num.below.expectations['b'] <- sum(num.below.expectations[paste('b', 1:2, sep="")])
+num.below.expectations['c'] <- sum(num.below.expectations[paste('c', 1:5, sep="")])
+num.below.expectations['d'] <- sum(num.below.expectations[paste('d', 1:5, sep="")])
+num.below.expectations['e'] <- sum(num.below.expectations[paste('e', 1:5, sep="")])
+num.below.expectations['f'] <- sum(num.below.expectations[paste('f', 1:3, sep="")])
+num.below.expectations['g'] <- sum(num.below.expectations[paste('g', 1:2, sep="")])
+num.below.expectations['h'] <- sum(num.below.expectations[paste('h', 1:3, sep="")])
+num.below.expectations['i'] <- sum(num.below.expectations[paste('i', 1:4, sep="")])
+num.below.expectations['j'] <- sum(num.below.expectations[paste('j', 1:5, sep="")])
+num.below.expectations['k'] <- sum(num.below.expectations[paste('k', 1:4, sep="")])
+
+get.excelled <- function (key) {
+    pct <- num.excelled[[key]] / (num.excelled[[key]] + num.mastered[[key]] + num.partially.mastered[[key]] + num.below.expectations[[key]])
+    if (is.nan(pct)) {
+      pct = NA
+    }
+    return (round(100*pct))
+}
+get.mastered <- function (key) {
+    pct <- num.mastered[[key]] / (num.excelled[[key]] + num.mastered[[key]] + num.partially.mastered[[key]] + num.below.expectations[[key]])
+    if (is.nan(pct)) {
+      pct = NA
+    }
+    return (round(100*pct))
+}
+get.partially.mastered <- function (key) {
+    pct <- num.partially.mastered[[key]] / (num.excelled[[key]] + num.mastered[[key]] + num.partially.mastered[[key]] + num.below.expectations[[key]])
+    if (is.nan(pct)) {
+      pct = NA
+    }
+    return (round(100*pct))
+}
+get.below.expectations <- function (key) {
+    pct <- num.below.expectations[[key]] / (num.excelled[[key]] + num.mastered[[key]] + num.partially.mastered[[key]] + num.below.expectations[[key]])
+    if (is.nan(pct)) {
+      pct = NA
+    }
+    return (round(100*pct))
+}
+num.assessed <- function (key) {
+    num <- round((num.excelled[[key]] + num.mastered[[key]] + num.partially.mastered[[key]] + num.below.expectations[[key]]))
+    return (num)
+}
+
+history.excelled <- data.frame(
+    a=c(62,  45,  61, NA, NA, NA, get.excelled('a')),
+    b=c(69,  46,  34, 29, NA, NA, get.excelled('b')),
+    c=c(71,  58,  31, 54, NA, 58, get.excelled('c')),
+    d=c(66,  53,  12, 71, NA, 41, get.excelled('d')),
+    e=c(20,  98,  92, 68, 49, NA, get.excelled('e')),
+    f=c(83,  67,  22, 47, NA, 67, get.excelled('f')),
+    g=c(20, 100,  NA, NA, NA, NA, get.excelled('g')),
+    h=c(20,  81,  NA, NA, NA, NA, get.excelled('h')),
+    i=c(67,  56,  70, NA, NA, NA, get.excelled('i')),
+    j=c(79,  36,  34, 31, NA, NA, get.excelled('j')),
+    k=c(49,  74,  NA, NA, NA, NA, get.excelled('k')))
+history.mastered <- data.frame(
+    a=c(10, 35,  10, NA, NA, NA, get.mastered('a')),
+    b=c(14, 33,  39, 31, NA, NA, get.mastered('b')),
+    c=c( 8, 22,  62, 46, NA, 39, get.mastered('c')),
+    d=c(17, 24,  84, 29, NA, 34, get.mastered('d')),
+    e=c(80,  2,   6, 18, 42, NA, get.mastered('e')),
+    f=c( 6, 29,  54, 53, NA, 33, get.mastered('f')),
+    g=c(80,  0,  NA, NA, NA, NA, get.mastered('g')),
+    h=c(80, 10,  NA, NA, NA, NA, get.mastered('h')),
+    i=c(24, 26,  23, NA, NA, NA, get.mastered('i')),
+    j=c(15, 26,  17, 22, NA, NA, get.mastered('j')),
+    k=c(15,  8,  NA, NA, NA, NA, get.mastered('k')))
+history.partially.mastered <- data.frame(
+    a=c(12,  9,  12, NA, NA, NA, get.partially.mastered('a')),
+    b=c(10, 15,   7, 31, NA, NA, get.partially.mastered('b')),
+    c=c(11,  9,   4,  0, NA,  3, get.partially.mastered('c')),
+    d=c( 7, 19,   3,  0, NA, 25, get.partially.mastered('d')),
+    e=c( 0,  0,   0, 12,  8, NA, get.partially.mastered('e')),
+    f=c(11,  4,  21,  0, NA,  0, get.partially.mastered('f')),
+    g=c( 0,  0,  NA, NA, NA, NA, get.partially.mastered('g')),
+    h=c( 0,  9,  NA, NA, NA, NA, get.partially.mastered('h')),
+    i=c( 3, 10,   2, NA, NA, NA, get.partially.mastered('i')),
+    j=c( 2, 17,  31, 28, NA, NA, get.partially.mastered('j')),
+    k=c(24,  2,  NA, NA, NA, NA, get.partially.mastered('k')))
+history.below.expectations <- data.frame(
+    a=c(16, 11,  18, NA, NA, NA, get.below.expectations('a')),
+    b=c( 7,  6,  20,  9, NA, NA, get.below.expectations('b')),
+    c=c(10, 11,   3,  0, NA,  0, get.below.expectations('c')),
+    d=c(10,  4,   1,  1, NA,  0, get.below.expectations('d')),
+    e=c( 0,  0,   2,  0,  2, NA, get.below.expectations('e')),
+    f=c( 0,  0,   2,  0, NA,  0, get.below.expectations('f')),
+    g=c( 0,  0,  NA, NA, NA, NA, get.below.expectations('g')),
+    h=c( 0,  0,  NA, NA, NA, NA, get.below.expectations('h')),
+    i=c( 6,  7,   5, NA, NA, NA, get.below.expectations('i')),
+    j=c( 4, 21,  18, 19, NA, NA, get.below.expectations('j')),
+    k=c(12, 16,  NA, NA, NA, NA, get.below.expectations('k')))
+
+history.pass <- history.excelled + history.mastered
+history.fail <- history.partially.mastered + history.below.expectations
+
+penultimate.value <- function(df, colidx) {
+  nr = nrow(df) - 1
+  while (nr > 0) {
+    if (!is.na(df[nr,colidx])) {
+      return (df[nr,colidx])
+    }
+    nr <- nr - 1
+  }
+  return (NA)
+}
+```
+
+## Summary
+
+The data for AY 2019-20 was used as part of our continuing improvement process
+in the Fall of 2021.
+
+Outcome  | % Excelled | % Mastered | % Partially Mastered | % Below Expectations | #Student Assessments
+:-------:|-----------:|-----------:|---------------------:|---------------------:|------------------------:
+(1)      | `r get.excelled('b')` | `r get.mastered('b')` | `r get.partially.mastered('b')` | `r get.below.expectations('b')` | `r num.assessed('b')`
+(2)      | `r get.excelled('c')` | `r get.mastered('c')` | `r get.partially.mastered('c')` | `r get.below.expectations('c')` | `r num.assessed('c')`
+(3)      | `r get.excelled('f')` | `r get.mastered('f')` | `r get.partially.mastered('f')` | `r get.below.expectations('f')` | `r num.assessed('f')`
+(4)      | `r get.excelled('e')` | `r get.mastered('e')` | `r get.partially.mastered('e')` | `r get.below.expectations('e')` | `r num.assessed('e')`
+(5)      | `r get.excelled('d')` | `r get.mastered('d')` | `r get.partially.mastered('d')` | `r get.below.expectations('d')` | `r num.assessed('d')`
+(6)      | `r get.excelled('j')` | `r get.mastered('j')` | `r get.partially.mastered('j')` | `r get.below.expectations('j')` | `r num.assessed('j')`
+
+Considering Excelled and Mastered to "Satisfy" each student outcome, we can look at historical trends.
+
+Outcome | %Satisfied 2014-15       | %Satisfied 2015-16       | %Satisfied 2016-17       | %Satisfied 2018-19       | %Satisfied 2019-20       | %Satisfied 2020-21       | %Satisfied 2023-24       | Last Year Change
+:------:|-------------------------:|-------------------------:|-------------------------:|-------------------------:|-------------------------:|-------------------------:|-----------------------:
+(1)     | `r history.pass[1, 'b']` | `r history.pass[2, 'b']` | `r history.pass[3, 'b']` | `r history.pass[4, 'b']` | `r history.pass[5, 'b']` | `r history.pass[6, 'b']` | `r history.pass[6, 'b'] - penultimate.value(history.pass, 'b')`
+(2)     | `r history.pass[1, 'c']` | `r history.pass[2, 'c']` | `r history.pass[3, 'c']` | `r history.pass[4, 'c']` | `r history.pass[5, 'c']` | `r history.pass[6, 'c']` | `r history.pass[6, 'c'] - penultimate.value(history.pass, 'c')`
+(3)     | `r history.pass[1, 'f']` | `r history.pass[2, 'f']` | `r history.pass[3, 'f']` | `r history.pass[4, 'f']` | `r history.pass[5, 'f']` | `r history.pass[6, 'f']` | `r history.pass[6, 'f'] - penultimate.value(history.pass, 'f')`
+(4)     | `r history.pass[1, 'e']` | `r history.pass[2, 'e']` | `r history.pass[3, 'e']` | `r history.pass[4, 'e']` | `r history.pass[5, 'e']` | `r history.pass[6, 'e']` | `r history.pass[6, 'e'] - penultimate.value(history.pass, 'e')`
+(5)     | `r history.pass[1, 'd']` | `r history.pass[2, 'd']` | `r history.pass[3, 'd']` | `r history.pass[4, 'd']` | `r history.pass[5, 'd']` | `r history.pass[6, 'd']` | `r history.pass[6, 'd'] - penultimate.value(history.pass, 'd')`
+(6)     | `r history.pass[1, 'j']` | `r history.pass[2, 'j']` | `r history.pass[3, 'j']` | `r history.pass[4, 'j']` | `r history.pass[5, 'j']` | `r history.pass[6, 'j']` | `r history.pass[6, 'j'] - penultimate.value(history.pass, 'j')`
+
+The following graphs show the history of the outcomes (1) through (6), using data from the old outcomes (a)-(k) for prior years.
+
+```{r fig.width=10, fig.height=8, echo=FALSE, cache=FALSE}
+
+years <- c(2015, 2016, 2017, 2019, 2020, 2021, 2024)
+year_labels = c('2014-15', '2015-16', '2016-17', '2018-19', '2019-20', '2020-21', '2023-24')
+outcome_map=c('b', 'c', 'f', 'e', 'd', 'j')
+for (idx in c(1, 2, 3, 4, 5, 6)) {
+  # png(paste("outcome-", idx, ".png", sep=""))
+  outcome = outcome_map[idx]
+  hist <- c(history.pass[1, outcome], history.pass[2, outcome], history.pass[3, outcome], history.pass[4, outcome], history.pass[5, outcome], history.pass[6, outcome], history.pass[7, outcome])
+  plot(years, hist, xaxt="n", ylim=c(40,100))
+  abline(h=80, lty=3) 
+  lines(approx(years, hist, c(2015, 2016, 2017, 2019, 2020, 2021, 2024)))
+  axis(side=1, at=years, labels=year_labels)
+  title(paste('Outcome (',  idx, ')', sep=""))
+  # dev.off()
+}
+
+```
+
+More details of student assessment can be seen by considering the assessment of individual PKIs.
+
+Outcome | KPI    | % Excelled | % Mastered | % Partially Mastered | % Below Expectations | #Student Assessments
+:------:|:------:|-----------:|-----------:|---------------------:|---------------------:|--------------------:
+(1)     | (1.1)  |  `r get.excelled('b1')` | `r get.mastered('b1')` | `r get.partially.mastered('b1')` | `r get.below.expectations('b1')` | `r num.assessed('b1')`
+&nbsp;  | (1.2)  |  `r get.excelled('b2')` | `r get.mastered('b2')` | `r get.partially.mastered('b2')` | `r get.below.expectations('b2')` | `r num.assessed('b2')`
+(2)     | (2.1)  |  `r get.excelled('c1')` | `r get.mastered('c1')` | `r get.partially.mastered('c1')` | `r get.below.expectations('c1')` | `r num.assessed('c1')`
+&nbsp;  | (2.2)  |  `r get.excelled('c2')` | `r get.mastered('c2')` | `r get.partially.mastered('c2')` | `r get.below.expectations('c2')` | `r num.assessed('c2')`
+&nbsp;  | (2.3)  |  `r get.excelled('c3')` | `r get.mastered('c3')` | `r get.partially.mastered('c3')` | `r get.below.expectations('c3')` | `r num.assessed('c3')`
+&nbsp;  | (2.4)  |  `r get.excelled('c4')` | `r get.mastered('c4')` | `r get.partially.mastered('c4')` | `r get.below.expectations('c4')` | `r num.assessed('c4')`
+&nbsp;  | (2.5)  |  `r get.excelled('c5')` | `r get.mastered('c5')` | `r get.partially.mastered('c5')` | `r get.below.expectations('c5')` | `r num.assessed('c5')`
+(3)     | (3.1)  |  `r get.excelled('f1')` | `r get.mastered('f1')` | `r get.partially.mastered('f1')` | `r get.below.expectations('f1')` | `r num.assessed('f1')`
+&nbsp;  | (3.2)  |  `r get.excelled('f2')` | `r get.mastered('f2')` | `r get.partially.mastered('f2')` | `r get.below.expectations('f2')` | `r num.assessed('f2')`
+&nbsp;  | (3.3)  |  `r get.excelled('f3')` | `r get.mastered('f3')` | `r get.partially.mastered('f3')` | `r get.below.expectations('f3')` | `r num.assessed('f3')`
+(4)     | (4.1)  |  `r get.excelled('e1')` | `r get.mastered('e1')` | `r get.partially.mastered('e1')` | `r get.below.expectations('e1')` | `r num.assessed('e1')`
+&nbsp;  | (4.2)  |  `r get.excelled('e2')` | `r get.mastered('e2')` | `r get.partially.mastered('e2')` | `r get.below.expectations('e2')` | `r num.assessed('e2')`
+&nbsp;  | (4.3)  |  `r get.excelled('e3')` | `r get.mastered('e3')` | `r get.partially.mastered('e3')` | `r get.below.expectations('e3')` | `r num.assessed('e3')`
+&nbsp;  | (4.4)  |  `r get.excelled('e4')` | `r get.mastered('e4')` | `r get.partially.mastered('e4')` | `r get.below.expectations('e4')` | `r num.assessed('e4')`
+(5)     | (5.1)  |  `r get.excelled('d1')` | `r get.mastered('d1')` | `r get.partially.mastered('d1')` | `r get.below.expectations('d1')` | `r num.assessed('d1')`
+&nbsp;  | (5.2)  |  `r get.excelled('d2')` | `r get.mastered('d2')` | `r get.partially.mastered('d2')` | `r get.below.expectations('d2')` | `r num.assessed('d2')`
+&nbsp;  | (5.3)  |  `r get.excelled('d3')` | `r get.mastered('d3')` | `r get.partially.mastered('d3')` | `r get.below.expectations('d3')` | `r num.assessed('d3')`
+&nbsp;  | (5.4)  |  `r get.excelled('d4')` | `r get.mastered('d4')` | `r get.partially.mastered('d4')` | `r get.below.expectations('d4')` | `r num.assessed('d4')`
+&nbsp;  | (5.5)  |  `r get.excelled('d5')` | `r get.mastered('d5')` | `r get.partially.mastered('d5')` | `r get.below.expectations('d5')` | `r num.assessed('d5')`
+(6)     | (6.1)  |  `r get.excelled('j1')` | `r get.mastered('j1')` | `r get.partially.mastered('j1')` | `r get.below.expectations('j1')` | `r num.assessed('j1')`
+&nbsp;  | (6.2)  |  `r get.excelled('j2')` | `r get.mastered('j2')` | `r get.partially.mastered('j2')` | `r get.below.expectations('j2')` | `r num.assessed('j2')`
+&nbsp;  | (6.3)  |  `r get.excelled('j3')` | `r get.mastered('j3')` | `r get.partially.mastered('j3')` | `r get.below.expectations('j3')` | `r num.assessed('j3')`
+&nbsp;  | (6.4)  |  `r get.excelled('j4')` | `r get.mastered('j4')` | `r get.partially.mastered('j4')` | `r get.below.expectations('j4')` | `r num.assessed('j4')`
+&nbsp;  | (6.5)  |  `r get.excelled('j5')` | `r get.mastered('j5')` | `r get.partially.mastered('j5')` | `r get.below.expectations('j5')` | `r num.assessed('j5')`
+
+## Assessment Data
+
+### COSC 3011: Sotware Design, Danny Radosevich
+
+Core Course                             | Assessed
+:---------------------------------------|:----------------------------
+COSC 3011: Software Design              | Every other year, starting 2018-19
+
+---
+
+    Performance Indicator (1.2): Analyze at two or more proposed solutions to a 
+                                 given problem and select the best solution for 
+                                 the given problem
+ 
+    Assessed using weekly stand-up presentations of the design for course project
+
+    51 students were assessed.
+
+    23 students excelled.
+    24 students mastered.
+    0 students partially mastered.
+    4 students were below expectations.
+
+---
+
+    Performance Indicator (2.3): Design the selected solution for a given problem
+ 
+    This was assed via students' submission for their final project. Students were tasked with developing an application throughout the semester, culminating in their submission of a final code base. For this project students were working as a group.
+
+    51 students were assessed.
+
+    23 students excelled.
+    24 students mastered.
+    2 students partially mastered.
+    2 students were below expectations.  
+
+### COSC 3020: Algorithms & Data Structures, Lars Kotthoff
+
+Core Course                             | Assessed
+:---------------------------------------|:----------------------------
+COSC 3020: Algorithms & Data Structures | Every other year, starting 2016-17
+
+---
+
+    Performance Indicator (1.1): Identify key components and algorithms necessary for a solution 
+ 
+    This was assed using project https://github.com/COSC3020/pancake-sort
+
+    29 students were assessed.
+
+    11 students excelled.
+    13 students mastered.
+    2 students partially mastered.
+    3 students were below expectations.  
+
+---
+
+    Performance Indicator (1.2): Analyze at two or more proposed solutions to a 
+                                 given problem and select the best solution for 
+                                 the given problem
+ 
+    This was assed using project https://github.com/COSC3020/tsp-comparison
+
+    26 students were assessed.
+
+    8 students excelled.
+    1 students mastered.
+    3 students partially mastered.
+    14 students were below expectations.
+
+---
+
+    Performance Indicator (6.1) Analyze the asymptotic cost of divide-and-conquer algorithms 
+
+    This was assed using project https://github.com/COSC3020/divide-and-conquer-sum
+
+    29 computer science majors were assessed.
+
+    8 students excelled.
+    16 mastered.
+    4 partially mastered.
+    1 were below expectations.
+
+---
+
+    Performance Indicator (6.2) Analyze the asymptotic cost of recursive algorithms 
+
+    This was assed using project https://github.com/COSC3020/recurrence-analysis-mystery
+
+    29 computer science majors were assessed.
+
+    8 students excelled.
+    12 mastered.
+    6 partially mastered.
+    3 were below expectations.
+
+---
+
+    Performance Indicator (6.3) Analyze the asymptotic cost of basic graph algorithms 
+
+    This was assed using project https://github.com/COSC3020/graph-search
+
+    18 computer science majors were assessed.
+
+    7 students excelled.
+    5 mastered.
+    0 partially mastered.
+    6 were below expectations.
+
+---
+
+    Performance Indicator (6.4) Describe the impact of techniques such as caching and dynamic programming on the performance of algorithms 
+
+    This was assed using project https://github.com/COSC3020/dynamic-euler
+
+    27 computer science majors were assessed.
+
+    18 students excelled.
+    6 mastered.
+    1 partially mastered.
+    2 were below expectations.
+
+---
+
+    Performance Indicator (6.5) Understand the difference between polynomial and exponential complexity
+
+    This was assed using project https://github.com/COSC3020/graph-isomorphism
+
+    28 computer science majors were assessed.
+
+    9 students excelled.
+    9 mastered.
+    6 partially mastered.
+    4 were below expectations.
+
+### COSC 3050: Computer Ethics, Robin Hill
+
+Core Course                             | Assessed
+:---------------------------------------|:----------------------------
+COSC 3050: Computer Ethics              | Every other year, starting 2018-19
+
+---
+
+    Performance Indicator (4.1): Recognize ethical issues involved in a professional setting
+
+ 
+    Final Exam Q.27: Consider Stewart in Dark UX: to what extent does his ethical quandary depend on the nature of computing (professional ethics) as opposed to business concerns or general ethics?  What does he face that other professionals don't?
+
+    20 students were assessed.
+
+    13 students excelled.
+    4 students mastered.
+    2 students partially mastered.
+    1 students were below expectations.  
+
+---
+
+    Performance Indicator (4.2): Describe current issues in security
+
+    No longer assessed in this class. 
+
+---
+
+    Performance Indicator (4.3): Describe current issues in privacy
+
+    No longer assessed in this class. 
+
+---
+
+    Performance Indicator (4.4): Respect and honor ethics in writing assignments
+
+    Final Exam Q.31:
+    We have discussed some standards that developers should follow in coding programs. State one, and use the Categorical Imperative (our version) to justify it.
+
+    20 students were assessed.
+
+    13 students excelled.
+    4 students mastered.
+    2 students partially mastered.
+    1 students were below expectations.  
+
+### COSC 4950/5: Senior Design I & II, Jim Ward
+
+Core Course                             | Assessed
+:---------------------------------------|:----------------------------
+COSC 4950: Senior Design I              | Every other year, starting 2017-18
+COSC 4955: Senior Design II             | Every other year, starting 2017-18
+
+This is the capstone course. Students work in groups ranging from 3 to 5, 
+select a project, and create a software system to solve it. The
+students flesh out the project ideas, deciding on the important features
+and trying to come to terms with project risk.  They decide what technology
+to use, and they proceed to implementation.  They also document their
+decisions by writing use cases, or other tools as appropriate (e.g., 
+story boards for projects that choose to write games).
+
+Classtime is devoted to group work and presentations that updated the 
+instructor and the other teams on the status of the project. They also
+create a poster presentation of their project and do a final presentation
+to a wide audience. The class presentations, poster, and final presentations
+are the main tools used for assessment.
+
+    Performance Indicator (2.1): Identify constraints on the design problem
+
+    Via final paper in SD1 and one on one interviews.   
+
+    40 students were assessed.
+
+    37 students excelled.
+    3 students mastered.
+    0 students partially mastered.
+    0 students were below expectations.
+
+---
+
+    Performance Indicator (2.2): Establish acceptance criteria for a solution
+
+    Via final paper in SD1 and one on one interviews.   
+
+    40 students were assessed.
+
+    37 students excelled.
+    3 students mastered.
+    0 students partially mastered.
+    0 students were below expectations.
+
+---
+
+    Performance Indicator (2.3): Design the selected solution for a given problem
+
+    Via final paper in SD1 and one on one interviews. 
+
+    40 students were assessed.
+
+    37 students excelled.
+    3 students mastered.
+    0 students partially mastered.
+    0 students were below expectations.
+
+---
+
+    Performance Indicator (2.4): Implement the designed solution for a given problem
+
+    Via Project notebook in SD2 and one on one interviews.   
+
+    40 students were assessed.
+
+    37 students excelled.
+    3 students mastered.
+    0 students partially mastered.
+    0 students were below expectations.
+
+---
+
+    Performance Indicator (2.5): Evaluate the implemented solution
+
+    Via Project notebook in SD2 and one on one interviews.   
+
+    40 students were assessed.
+
+    36 students excelled.
+    3 students mastered.
+    0 students partially mastered.
+    1 students were below expectations.
+
+---
+
+    Performance Indicator (5.1): Listen to other team members
+
+    Using the survey, “What worked well in your team?”
+
+    37 students were assessed.
+
+    30 students excelled.
+    7 students mastered.
+    0 students partially mastered.
+    0 students were below expectations.
+
+---
+
+    Performance Indicator (5.2): Actively discuss team projects, objectives, or challenges with other team members
+
+    Using the survey, “What worked well in your team?”  and “What might you and your team do differently if you had to do it all over again?”
+
+    37 students were assessed.
+
+    30 students excelled.
+    7 students mastered.
+    0 students partially mastered.
+    0 students were below expectations.
+
+---
+
+    Performance Indicator (5.3): Fulfill team duties on time
+
+    Using the survey, “For each of the following, assess YOUR contribution [overall success of project]”, “For each of the following, assess YOUR contribution [overall success of the videos and demos]”, “For each of the following, assess YOUR contribution [to the code base]”, For each of the following, assess YOUR contribution [to the documentation]”.  These questions are then repeated for each team member.
+
+    37 students were assessed.
+
+    29 students excelled.
+    6 students mastered.
+    2 students partially mastered.
+    0 students were below expectations.
+
+---
+
+    Performance Indicator (5.4): Share in the work of the team
+
+    Using the survey:, “For each of the following, assess YOUR contribution [overall success of project]”, “For each of the following, assess YOUR contribution [overall success of the videos and demos]”, “For each of the following, assess YOUR contribution [to the code base]”, For each of the following, assess YOUR contribution [to the documentation]”.  These questions are then repeated for each team member. 
+
+    37 students were assessed.
+
+    29 students excelled.
+    6 students mastered.
+    2 students partially mastered.
+    0 students were below expectations.
+
+---
+
+    Performance Indicator (5.5): Research and gather information
+
+    Using the SD1 group project report, and one on one conversations with the groups.
+
+    37 students were assessed.
+
+    29 students excelled.
+    5 students mastered.
+    3 students partially mastered.
+    0 students were below expectations.
+
+---
+
+    Performance Indicator (3.1): Write technical reports
+
+    Via final report in SD1 and Project notebook in SD2.
+
+    37 students were assessed.
+
+    33 students excelled.
+    3 students mastered.
+    0 students partially mastered.
+    1 students were below expectations.
+
+---
+
+    Performance Indicator (3.2): Present technical material to technical peers
+
+    Present at Undergrad Research and Inquiry Days, which is a public event.
+
+    37 students were assessed.
+
+    31 students excelled.
+    5 students mastered.
+    0 students partially mastered.
+    1 students were below expectations.
+
+---
+
+    Performance Indicator (3.3): Present technical material to non-technical visitors
+
+    Present at Undergrad Research and Inquiry Days, which is a public event.
+
+    37 students were assessed.
+
+    31 students excelled.
+    5 students mastered.
+    0 students partially mastered.
+    1 students were below expectations.
+
